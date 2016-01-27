@@ -1,0 +1,29 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: QCEHARc6I7exS3+KUYSb1T8UnfTmA
+ /hHjB6LF8Ojftw=
+SHA-256-Digest-Manifest: 8KpJG53aYcTgn+uKgS9QuwkT2aX1R2vCmjEnq/L0oIc=
+Created-By: 1.8.0_40 (Oracle Corporation)
+
+Name: epl-v10.html
+SHA-256-Digest: ivPTM3phc3zNk5zAa0eKwnKMIkhfBeiYvWu+PXfq0DI=
+
+Name: feature.xml
+SHA-256-Digest: ug+BbUx57Wgn8riMcTa2uz1kaQIA+PnUJ+95969D5Kw=
+
+Name: eclipse_update_120.jpg
+SHA-256-Digest: MmeYNmNUNUw0QaBY6ufcd85X5WvVw3TeIR0FKLBIE+w=
+
+Name: feature.properties
+SHA-256-Digest: qDodWABd7bUmmPYNpA2g2Q2KjCPgsI+ikGO1aib2H28=
+
+Name: license.html
+SHA-256-Digest: gb5ZzrbOyFArzDLUIG4huZV/GHHBYb0EtixuMKXnhqs=
+
+Name: META-INF/maven/org.eclipse.gmf-tooling.features/org.eclipse.gmf.
+ tooling.runtime/pom.properties
+SHA-256-Digest: qMx4b9w/ZJwConqmWLlQ+UYDt+pOIjD773Y4KDOYuiM=
+
+Name: META-INF/maven/org.eclipse.gmf-tooling.features/org.eclipse.gmf.
+ tooling.runtime/pom.xml
+SHA-256-Digest: KGqyBOvgQWYT7pDpT5oTWismAU7q2EiZFKA/amjNXh0=
+

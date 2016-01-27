@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.edapt.runtime.feature"
+      label="Edapt Runtime Feature"
+      version="1.1.0.201506090903"
+      provider-name="Eclipse Modeling Project">
+
+   <description url="http://www.eclipse.org/edapt">
+      Edapt eases the coupled evolution of EMF metamodels and models.
+   </description>
+
+   <copyright>
+      Copyright (c) 2007, 2010 BMW Car IT, Technische Universitaet Muenchen, and others.
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <discovery label="Edapt project site" url="http://www.eclipse.org/edapt"/>
+   </url>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.emf.common"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.ocl.ecore"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.emf.edapt.common"
+         download-size="39"
+         install-size="80"
+         version="1.1.0.201506090903"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.edapt.declaration"
+         download-size="204"
+         install-size="539"
+         version="1.1.0.201506090903"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.edapt.migration"
+         download-size="373"
+         install-size="971"
+         version="1.1.0.201506090903"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.edapt.history"
+         download-size="318"
+         install-size="848"
+         version="1.1.0.201506090903"
+         unpack="false"/>
+
+</feature>

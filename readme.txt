@@ -1,1 +1,1 @@
-djfwekofjowekr
+This tool was created as part of the EU Framework 7 Distributed MILS (D-MILS) project. It enables the automatic instantiation of D-MILS safety case patterns using models of the system. For instructions on how to install and use the tool see the User Guide.

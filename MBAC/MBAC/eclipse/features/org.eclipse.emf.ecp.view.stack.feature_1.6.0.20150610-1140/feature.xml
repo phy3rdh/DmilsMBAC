@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.ecp.view.stack.feature"
+      label="EMF Forms Stack Model"
+      version="1.6.0.20150610-1140"
+      provider-name="%providerName"
+      plugin="org.eclipse.emf.ecp.view.stack.model"
+      image="eclipse_update_120.jpg">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.stack.model"
+         download-size="32"
+         install-size="59"
+         version="1.6.0.20150610-1140"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.stack.model.edit"
+         download-size="28"
+         install-size="49"
+         version="1.6.0.20150610-1140"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.stack.ui.swt"
+         download-size="27"
+         install-size="52"
+         version="1.6.0.20150610-1140"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecp.view.stack.viewmodel"
+         download-size="8"
+         install-size="12"
+         version="1.6.0.20150610-1140"
+         unpack="false"/>
+
+</feature>

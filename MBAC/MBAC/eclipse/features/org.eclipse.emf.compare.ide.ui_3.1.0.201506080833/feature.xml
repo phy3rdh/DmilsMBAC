@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.eclipse.emf.compare.ide.ui"
+      label="%featureName"
+      version="3.1.0.201506080833"
+      provider-name="%providerName"
+      plugin="org.eclipse.emf.compare.ide.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.eclipse.emf.compare" version="3.1.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.emf.compare.edit"
+         download-size="149"
+         install-size="306"
+         version="4.1.0.201506080833"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.compare.ide"
+         download-size="61"
+         install-size="132"
+         version="3.2.0.201506080833"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.compare.ide.ui"
+         download-size="533"
+         install-size="1247"
+         version="4.1.0.201506080833"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.compare.doc"
+         download-size="11376"
+         install-size="38816"
+         version="3.2.0.201506080833"
+         unpack="false"/>
+
+</feature>

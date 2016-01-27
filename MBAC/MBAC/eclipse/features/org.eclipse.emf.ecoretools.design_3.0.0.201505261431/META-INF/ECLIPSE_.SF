@@ -1,0 +1,29 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 4U8sakgxWQ6G0cPCd/gtQwdraHJSD
+ KPqM9J14IKBGhM=
+SHA-256-Digest-Manifest: fkNlxu6znQ2awNEocHcxq037PvnpXyPbZf19Dr4+/5U=
+Created-By: 1.8.0_40 (Oracle Corporation)
+
+Name: epl-v10.html
+SHA-256-Digest: LwwHH6Ww/ppPhKyMXRScvLbxGP4nFRALCbHbbwSA0SA=
+
+Name: feature.xml
+SHA-256-Digest: PR30ZSJBSfhvtwY7c8APPkeM+xHD8xn9vNXsiHVzyzg=
+
+Name: feature.properties
+SHA-256-Digest: mcTVBJ4Uo9t/2DLnkqd2wCiXuuzuQ6bSOx7o8OeLnFk=
+
+Name: META-INF/maven/org.eclipse.emf.ecoretools.features/org.eclipse.e
+ mf.ecoretools.design/pom.xml
+SHA-256-Digest: t4JJR5gApiNWJ+JA1qhI4jZj1Nj0WIVUI/S6WKob+KQ=
+
+Name: META-INF/maven/org.eclipse.emf.ecoretools.features/org.eclipse.e
+ mf.ecoretools.design/pom.properties
+SHA-256-Digest: vJhhalOqRMZ+3jDPNORhZKglF0Xqnm+UNHHU8ImQugk=
+
+Name: license.html
+SHA-256-Digest: pEpTCjXFbyOzPzOl0narWc/2mqCT7h2Hs1Bhg4jemQY=
+
+Name: modeling32.png
+SHA-256-Digest: CgS/5RX+HpcveJj25BP7XwIrPI3o7AtCMO2apmBLMZ0=
+
