@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/OCProcessModel/src" editDirectory="/Evidence.edit/src"
+    editorDirectory="/Evidence.editor/src" modelPluginID="OCProcessModel" modelName="Evidence"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" testsDirectory="/Evidence.tests/src"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    editPluginID="Evidence.edit" editorPluginID="Evidence.editor" testsPluginID="Evidence.tests"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>evidence.ecore</foreignModel>
+  <genPackages prefix="Evidence" disposableProviderFactory="true" ecorePackage="evidence.ecore#/">
+    <genClasses ecoreClass="evidence.ecore#//ArtefactModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//ArtefactModel/artefact"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactModel/repoUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactModel/repoUser"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactModel/repoPassword"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactModel/repoLocalPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactModel/repoUsesLocal"/>
+    </genClasses>
+    <genClasses ecoreClass="evidence.ecore#//Artefact">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//Artefact/propertyValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//Artefact/artefactPart"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//Artefact/ownedRel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/versionID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/changes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/isLastVersion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//Artefact/resource"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference evidence.ecore#//Artefact/precedentVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/isTemplate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Artefact/isConfigurable"/>
+    </genClasses>
+    <genClasses ecoreClass="evidence.ecore#//Value">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Value/value"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference evidence.ecore#//Value/propertyReference"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Value/name"/>
+    </genClasses>
+    <genClasses ecoreClass="evidence.ecore#//Resource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Resource/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//Resource/format"/>
+    </genClasses>
+    <genClasses ecoreClass="evidence.ecore#//ArtefactRel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactRel/modificationEffect"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute evidence.ecore#//ArtefactRel/revocationEffect"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference evidence.ecore#//ArtefactRel/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference evidence.ecore#//ArtefactRel/target"/>
+    </genClasses>
+    <genClasses ecoreClass="evidence.ecore#//ArtefactDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference evidence.ecore#//ArtefactDefinition/artefact"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="General" disposableProviderFactory="true" ecorePackage="general.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//RequirementRelKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/XOR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/Requires"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/ContributesTo"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ChangeEffectKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/None"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Revoke"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Modify"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Validate"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ActivityRelKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ActivityRelKind/Decomposition"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ActivityRelKind/Precedence"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ApplicabilityKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/XOR"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="general.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//NamedElement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="general.ecore#//DescribableElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//DescribableElement/description"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Assuranceasset" disposableProviderFactory="true" ecorePackage="assuranceasset.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="assuranceasset.ecore#//EventKind">
+      <genEnumLiterals ecoreEnumLiteral="assuranceasset.ecore#//EventKind/Creation"/>
+      <genEnumLiterals ecoreEnumLiteral="assuranceasset.ecore#//EventKind/Modification"/>
+      <genEnumLiterals ecoreEnumLiteral="assuranceasset.ecore#//EventKind/Evaluation"/>
+      <genEnumLiterals ecoreEnumLiteral="assuranceasset.ecore#//EventKind/Approval"/>
+      <genEnumLiterals ecoreEnumLiteral="assuranceasset.ecore#//EventKind/Revocation"/>
+    </genEnums>
+    <genClasses ecoreClass="assuranceasset.ecore#//AssuranceAssetsModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference assuranceasset.ecore#//AssuranceAssetsModel/AssuranceAsset"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="assuranceasset.ecore#//AssuranceAsset"/>
+    <genClasses ecoreClass="assuranceasset.ecore#//ManageableAssuranceAsset">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference assuranceasset.ecore#//ManageableAssuranceAsset/evaluation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference assuranceasset.ecore#//ManageableAssuranceAsset/lifecycleEvent"/>
+    </genClasses>
+    <genClasses ecoreClass="assuranceasset.ecore#//AssuranceAssetEvent">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference assuranceasset.ecore#//AssuranceAssetEvent/resultingEvaluation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvent/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvent/time"/>
+    </genClasses>
+    <genClasses ecoreClass="assuranceasset.ecore#//AssuranceAssetEvaluation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvaluation/criterion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvaluation/criterionDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvaluation/evaluationResult"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute assuranceasset.ecore#//AssuranceAssetEvaluation/rationale"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Property" disposableProviderFactory="true" ecorePackage="property.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="property.ecore#//DataTypeKind">
+      <genEnumLiterals ecoreEnumLiteral="property.ecore#//DataTypeKind/Enumeration"/>
+      <genEnumLiterals ecoreEnumLiteral="property.ecore#//DataTypeKind/String"/>
+      <genEnumLiterals ecoreEnumLiteral="property.ecore#//DataTypeKind/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="property.ecore#//DataTypeKind/Float"/>
+    </genEnums>
+    <genClasses ecoreClass="property.ecore#//PropertyModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference property.ecore#//PropertyModel/hasProperty"/>
+    </genClasses>
+    <genClasses ecoreClass="property.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute property.ecore#//Property/datatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute property.ecore#//Property/enumValues"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute property.ecore#//Property/unit"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

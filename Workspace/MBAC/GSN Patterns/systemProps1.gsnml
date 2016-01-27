@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="systemProps1" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: sysProps" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="D-MILS System" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="required properties are enforced" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Con: sysProps" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="required properties:" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="D-MILS system property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: sysProps" target="Con: sysProps" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Con: sysDescr" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="D-MILS System: defined by" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="MILS-AADL system model" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: sysProps" target="Con: sysDescr" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Strat: sysSecurity" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over each safety or security property" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.5" source="Goal: sysProps" target="Strat: sysSecurity" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Ass: sysProps" xsi:type="gsnmetamodel:GSN_Assumption">
+      <contents literal="The defined required properties are complete and correct w.r.t. system threats, vulnerabilities and hazards" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7" source="Strat: sysSecurity" target="Ass: sysProps" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Goal: propEnforced" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="D-MILS system property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is enforced" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.9" multiplicity="D-MILS system property" source="Strat: sysSecurity" target="Goal: propEnforced" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

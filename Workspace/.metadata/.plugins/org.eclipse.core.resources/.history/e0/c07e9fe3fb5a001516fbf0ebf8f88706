@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:gsnPatternEditor="http://gsnPatternEditor/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_ELt8kFbaEeWMHMehS6VkSg" type="GsnPatternEditor" name="default.gsnml_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_HoPGwFbaEeWMHMehS6VkSg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HoSxIFbaEeWMHMehS6VkSg" type="5013"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_HoTYMFbaEeWMHMehS6VkSg" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_InI_AFbaEeWMHMehS6VkSg" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_InJmElbaEeWMHMehS6VkSg" type="5003"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_InJmE1baEeWMHMehS6VkSg" type="7002"/>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_InJmEFbaEeWMHMehS6VkSg"/>
+        <element xmi:type="gsnPatternEditor:GSN_Goal" href="default.gsnml#//@contains.0/@ArgumentElements.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_InJmEVbaEeWMHMehS6VkSg" x="166" y="57"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_HoPGwVbaEeWMHMehS6VkSg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HoPGwlbaEeWMHMehS6VkSg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_HoPGw1baEeWMHMehS6VkSg"/>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_HoPGxFbaEeWMHMehS6VkSg"/>
+    <element xmi:type="gsnPatternEditor:GSN_Module" href="default.gsnml#//@contains.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HoPGxVbaEeWMHMehS6VkSg" x="132" y="107" width="499" height="354"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ELt8kVbaEeWMHMehS6VkSg"/>
+  <element xmi:type="gsnPatternEditor:Case" href="default.gsnml#/"/>
+</notation:Diagram>

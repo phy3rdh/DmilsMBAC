@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="systemProps3" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: propAdd" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is satisfied through the realisation of the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: propSat_Composition" modRef="Composition" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is satisfied in the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: propAdd" target="Goal: propSat_Composition" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

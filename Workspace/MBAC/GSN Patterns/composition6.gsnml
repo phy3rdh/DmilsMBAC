@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="composition6" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Con: verifResults" xsi:type="gsnmetamodel:GSN_ContextAsAssertion"/>
+  </contains>
+</gsnmetamodel:Case>

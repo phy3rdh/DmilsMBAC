@@ -1,0 +1,1775 @@
+!SESSION 2015-09-07 10:13:10.341 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 10:13:27.904
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 10:13:52.343
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-07 10:44:42.204 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 10:44:55.084
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 10:44:55.360
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 10:53:32.943 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 10:53:48.954
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 10:53:49.155
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 11:02:47.874 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 11:03:05.221
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 11:03:05.567
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 11:18:32.964 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 11:19:39.613
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 11:19:39.876
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 11:20:39.593 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 11:20:51.132
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 11:20:51.693
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 14:53:21.604 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 14:53:42.141
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 14:53:42.756
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-07 14:54:57.394 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 14:55:15.359
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 14:55:15.890
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 15:21:11.719 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 15:21:47.545
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 15:21:47.999
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 16:16:28.278 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 16:16:40.779
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 16:16:41.424
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 16:58:09.045 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 16:58:23.578
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 16:58:24.127
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 17:42:34.737 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 17:42:46.452
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 17:42:46.459
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-07 17:57:17.482 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-07 17:58:51.968
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-07 17:58:52.102
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-09 11:56:55.932 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-09 11:57:17.749
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-09 11:57:18.340
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-09 13:55:05.517 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-09 13:55:27.616
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-09 13:55:28.446
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-09 14:12:24.672 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-09 14:12:36.069
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-09 14:12:36.320
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.434
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse[Unknown Source]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:453]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:810]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:789]
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph[GraphmlImporter.java:91]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:48]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:40]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse[Unknown Source]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:453]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:810]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:789]
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph[GraphmlImporter.java:91]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:48]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:40]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:453)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:810)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:789)
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph(GraphmlImporter.java:91)
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load(GraphmlModel.java:48)
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load(GraphmlModel.java:40)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml (The system cannot find the path specified)
+	... 27 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.532
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.553
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.598
+!MESSAGE Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+!STACK 0
+Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:221)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:525)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1269)
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register(EmfUtil.java:161)
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom(EmfModel.java:395)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri(EmfModel.java:240)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel(EmfModel.java:168)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.emf.EmfModel.load(EmfModel.java:152)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	... 19 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:207)
+	... 18 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.648
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:18:43.663
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.406
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse[Unknown Source]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:453]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:810]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:789]
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph[GraphmlImporter.java:91]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:48]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:40]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse[Unknown Source]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:453]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:810]
+	at org.jdom.input.SAXBuilder.build[SAXBuilder.java:789]
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph[GraphmlImporter.java:91]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:48]
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load[GraphmlModel.java:40]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:453)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:810)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:789)
+	at org.eclipse.epsilon.emc.graphml.GraphmlImporter.importGraph(GraphmlImporter.java:91)
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load(GraphmlModel.java:48)
+	at org.eclipse.epsilon.emc.graphml.GraphmlModel.load(GraphmlModel.java:40)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\weavingMLC2.graphml (The system cannot find the path specified)
+	... 27 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.438
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC32.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.451
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC1.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.472
+!MESSAGE Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+!STACK 0
+Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:221)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:525)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1269)
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register(EmfUtil.java:161)
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom(EmfModel.java:395)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri(EmfModel.java:240)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel(EmfModel.java:168)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.emf.EmfModel.load(EmfModel.java:152)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	... 19 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:207)
+	... 18 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.486
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC4.gsnml (The system cannot find the path specified)
+	... 25 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:25:44.500
+!MESSAGE Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+!STACK 0
+Internal error: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml [The system cannot find the path specified]
+	at java.io.FileInputStream.open[Native Method]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at java.io.FileInputStream.<init>[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.connect[Unknown Source]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity[Unknown Source]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse[Unknown Source]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse[Unknown Source]
+	at javax.xml.parsers.DocumentBuilder.parse[Unknown Source]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel[PlainXmlModel.java:334]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load[PlainXmlModel.java:368]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.loadModel(PlainXmlModel.java:334)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.plainxml.PlainXmlModel.load(PlainXmlModel.java:368)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Users\tom\Desktop\Eclipse Workspaces\Workspace\NewMLC\model\MLC5.gsnml (The system cannot find the path specified)
+	... 25 more
+!SESSION 2015-09-09 14:26:43.123 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-09 14:26:53.469
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-09 14:26:53.820
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-09 14:29:42.610 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-09 14:30:04.489
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-09 14:30:04.833
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:42:11.030
+!MESSAGE Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+!STACK 0
+Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register[EmfUtil.java:161]
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom[EmfModel.java:395]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:240]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 18 more
+
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:221)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:525)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1269)
+	at org.eclipse.epsilon.emc.emf.EmfUtil.register(EmfUtil.java:161)
+	at org.eclipse.epsilon.emc.emf.EmfModel.determinePackagesFrom(EmfModel.java:395)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri(EmfModel.java:240)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel(EmfModel.java:168)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.emf.EmfModel.load(EmfModel.java:152)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	... 19 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/gsnmetamodel.ecore' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:207)
+	... 18 more
+
+!ENTRY org.eclipse.epsilon.common.dt 4 0 2015-09-09 14:45:45.218
+!MESSAGE Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:255]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 16 more
+
+!STACK 0
+Internal error: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:221]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream[PlatformResourceURIHandlerImpl.java:525]
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream[ExtensibleURIConverterImpl.java:360]
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load[ResourceImpl.java:1269]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri[EmfModel.java:255]
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel[EmfModel.java:168]
+	at org.eclipse.epsilon.eol.models.CachedModel.load[CachedModel.java:147]
+	at org.eclipse.epsilon.emc.emf.EmfModel.load[EmfModel.java:152]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels[EclipseContextManager.java:160]
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup[EclipseContextManager.java:86]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:72]
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch[EpsilonLaunchConfigurationDelegate.java:56]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:885]
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch[LaunchConfiguration.java:739]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch[DebugUIPlugin.java:1039]
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run[DebugUIPlugin.java:1256]
+	at org.eclipse.core.internal.jobs.Worker.run[Worker.java:55]
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists[Resource.java:334]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible[Resource.java:208]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:267]
+	at org.eclipse.core.internal.resources.File.getContents[File.java:260]
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream[PlatformResourceURIHandlerImpl.java:207]
+	... 16 more
+
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:221)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl.createInputStream(PlatformResourceURIHandlerImpl.java:525)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createInputStream(ExtensibleURIConverterImpl.java:360)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1269)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModelFromUri(EmfModel.java:255)
+	at org.eclipse.epsilon.emc.emf.EmfModel.loadModel(EmfModel.java:168)
+	at org.eclipse.epsilon.eol.models.CachedModel.load(CachedModel.java:147)
+	at org.eclipse.epsilon.emc.emf.EmfModel.load(EmfModel.java:152)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.loadModels(EclipseContextManager.java:160)
+	at org.eclipse.epsilon.eol.dt.launching.EclipseContextManager.setup(EclipseContextManager.java:86)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:72)
+	at org.eclipse.epsilon.eol.dt.launching.EpsilonLaunchConfigurationDelegate.launch(EpsilonLaunchConfigurationDelegate.java:56)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.emf.ecore.resource.Resource$IOWrappedException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	... 17 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/MBAC/model/InstantiatedGSNPattern.gsnmetamodel' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:334)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:208)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:267)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:260)
+	at org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl$WorkbenchHelper.createPlatformResourceInputStream(PlatformResourceURIHandlerImpl.java:207)
+	... 16 more
+!SESSION 2015-09-14 09:34:23.072 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 09:35:01.908
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 09:35:01.921
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-14 10:06:58.110 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 10:07:27.518
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 10:07:27.542
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-09-14 10:46:28.523
+!MESSAGE An internal error occurred during: "Launching ProcessOCRA".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getLaunchManager(LaunchConfiguration.java:479)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:895)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-09-14 10:48:14.493 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 10:48:33.344
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 10:48:34.121
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-14 13:18:55.672 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 13:19:09.115
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 13:19:09.317
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-14 13:44:18.554 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 13:44:33.884
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 13:44:33.931
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-14 13:46:57.292 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 13:47:09.567
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 13:47:09.621
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-14 13:50:20.387 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 13:51:18.313
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 13:51:18.454
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-14 13:57:35.745 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 13:58:01.103
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 13:58:01.216
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-14 17:13:56.260 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 17:14:15.800
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 17:14:16.329
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-09-14 17:17:10.915 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 17:17:22.445
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 17:17:23.257
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-14 17:18:38.022 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 17:18:47.765
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 17:18:48.309
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+!SESSION 2015-09-14 17:38:34.307 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.7.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-09-14 17:38:47.143
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\tom'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 0 2015-09-14 17:38:47.300
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'org.eclipse.epsilon.emf.dt' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!

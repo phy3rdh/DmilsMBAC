@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="processTool2" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: evalTool" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="evaluation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="demonstrates correctness of tool" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: evalRes" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="evaluation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="result demonstrates defined criterion is met" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: evalTool" target="Goal: evalRes" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: evalRes" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="evaluation result" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: evalRes" target="Sol: evalRes" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Con: criterion" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents role="criterion" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.5" source="Goal: evalRes" target="Con: criterion" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Just: rationale" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Justification">
+      <contents role="rationale" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.7" source="Goal: evalRes" target="Just: rationale" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Goal: evalAppropriate" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Evaluation result is appropriate for evaluating" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="tool" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.9" source="Goal: evalTool" target="Goal: evalAppropriate" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Con: artefactVersion" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents role="version" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.11" source="Goal: evalAppropriate" target="Con: artefactVersion" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Con: artefactDate" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents role="date" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.13" source="Goal: evalAppropriate" target="Con: artefactDate" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+  </contains>
+</gsnmetamodel:Case>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="Con: platformProps" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Con: platformProps" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="properties of D-MILS platform:" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="assumed platform property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+  </contains>
+</gsnmetamodel:Case>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<starlightManual:ManualElement xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:starlightManual="http://org.starlightManual">
+  <milsModels name="Starlight MILS AADL model"/>
+  <systemProps name="Any command sent between a switch_to_high (or the beginning) and a switch_to_low event should not be visible to the low-security subject"/>
+</starlightManual:ManualElement>

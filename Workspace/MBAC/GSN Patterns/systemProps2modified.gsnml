@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="systemProps2" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: propEnforced" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="D-MILS system property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is enforced" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Strat: compVerif" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over each formal property relating to " xsi:type="gsnmetamodel:Literal"/>
+      <contents role="D-MILS system property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: propEnforced" target="Strat: compVerif" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Con: formalProps" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="formal system properties relating to D-MILS system property: " xsi:type="gsnmetamodel:Literal"/>
+      <contents role="formal properties" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3" source="Strat: compVerif" target="Con: formalProps" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Goal: propSuff" toBeSupported="true" undeveloped="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="The formal properties are sufficient to address the defined D-MILS system properties" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.5" source="Strat: compVerif" target="Goal: propSuff" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: propAdd" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is satisfied through the realisation of the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.7" multiplicity="formal property" source="Strat: compVerif" target="Goal: propAdd" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: propSat" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Formal properties are addressed through the realisation of the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.9" source="Strat: compVerif" target="Goal: propSat" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Strat: SysSecurity" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over the required properties of the components and the platform" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.11" source="Goal: propSat" target="Strat: SysSecurity" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: swComponents" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Trusted software components correctly implement the MILS-AADL implementation specification" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13" source="Strat: SysSecurity" target="Goal: swComponents" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Strat: swComponents" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over each trusted software component" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.15" source="Goal: swComponents" target="Strat: swComponents" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.15" hasTarget="//@contains.0/@ArgumentElements.18" multiplicity="trusted software component" source="Strat: swComponents" target="Goal: sWcompProp_Trusted Software Component" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: sWcompProp_Trusted Software Component" modRef="Trusted Software Component" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents role="trusted software component" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="correctly implements the MILS-AADL implementation specification" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: platProp_D-MILS PLatform" modRef="DMILS Platform" tobeInstantiated="false" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents literal="D-MILS platform guarantees required properties" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.19" source="Strat: SysSecurity" target="Goal: platProp_D-MILS PLatform" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: envAss" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="All environmental assumptions are met" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.21" source="Strat: SysSecurity" target="Goal: envAss" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Strat: envAss" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over each assumed environmental property" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.21" hasTarget="//@contains.0/@ArgumentElements.23" source="Goal: envAss" target="Strat: envAss" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: sysProp" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="assumed environmental property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is met" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.23" hasTarget="//@contains.0/@ArgumentElements.25" multiplicity="assumed environmental property" source="Strat: envAss" target="Goal: sysProp" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: sysImp_Implementation" modRef="Implementation" tobeInstantiated="false" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents literal="The MILS-AADL model is faithfully implemented" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.27" source="Strat: SysSecurity" target="Goal: sysImp_Implementation" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

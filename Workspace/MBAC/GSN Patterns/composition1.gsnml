@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="composition 1" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: propSat" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is satisfied in the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: formalVerif " tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Formal verification proves that the MILS-AADL model satisfies" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: propSat" target="Goal: formalVerif" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: verifResults" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Results of formal verification demonstrate" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: formalVerif" target="Goal: verifResults" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: verifResults" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="formal verification results for formal property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5" source="Goal: verifResults" target="Sol: verifResults" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Con: components" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="trusted software components: " xsi:type="gsnmetamodel:Literal"/>
+      <contents role="trusted software component" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.7" multiplicity="trusted software component" source="Goal: verifResults" target="Con: components" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Con: platformProps" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="properties of D-MILS platform:" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="assumed platform property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.9" id="" multiplicity="assumed platform property" source="Goal: verifResults" target="Con: platformProps" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+    <ArgumentElements id="Goal: formalConf" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="There is sufficient confidence in the formal verification results" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.11" source="Goal: formalVerif" target="Goal: formalConf" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: verification" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="gives trustworthy results" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13" source="Goal: formalConf" target="Goal: verification" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: activityTrust_Process" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="process is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.15" multiplicity="technique" source="Goal: verification" target="Goal: activityTrust_Process" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

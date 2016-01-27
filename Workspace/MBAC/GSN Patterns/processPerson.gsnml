@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="processPerson" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: person" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="person" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Strat: person" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over person attributes" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: capability" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="person has sufficient capability to perform" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: capability" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="capability" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: experience" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="person has sufficient experience of" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.7" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: experience" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="experience" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.9" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

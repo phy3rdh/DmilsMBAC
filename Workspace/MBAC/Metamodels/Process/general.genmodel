@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/OCProcessModel/src" modelPluginID="OCProcessModel"
+    modelName="General" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>general.ecore</foreignModel>
+  <genPackages prefix="General" disposableProviderFactory="true" ecorePackage="general.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//RequirementRelKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/XOR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/Requires"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//RequirementRelKind/ContributesTo"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ChangeEffectKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/None"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Revoke"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Modify"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ChangeEffectKind/Validate"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ActivityRelKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ActivityRelKind/Decomposition"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ActivityRelKind/Precedence"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="general.ecore#//ApplicabilityKind">
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/AND"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/OR"/>
+      <genEnumLiterals ecoreEnumLiteral="general.ecore#//ApplicabilityKind/XOR"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="general.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//NamedElement/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="general.ecore#//DescribableElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute general.ecore#//DescribableElement/description"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

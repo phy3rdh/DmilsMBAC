@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.14.3-->
+  <key for="graphml" id="d0" yfiles.type="resources"/>
+  <key for="port" id="d1" yfiles.type="portgraphics"/>
+  <key for="port" id="d2" yfiles.type="portgeometry"/>
+  <key for="port" id="d3" yfiles.type="portuserdata"/>
+  <key attr.name="Type" attr.type="string" for="node" id="d4">
+    <default/>
+  </key>
+  <key attr.name="Properties" attr.type="string" for="node" id="d5">
+    <default/>
+  </key>
+  <key attr.name="Default" attr.type="string" for="node" id="d6">
+    <default/>
+  </key>
+  <key attr.name="url" attr.type="string" for="node" id="d7"/>
+  <key attr.name="description" attr.type="string" for="node" id="d8"/>
+  <key for="node" id="d9" yfiles.type="nodegraphics"/>
+  <key attr.name="Description" attr.type="string" for="graph" id="d10"/>
+  <key attr.name="Type" attr.type="string" for="edge" id="d11">
+    <default/>
+  </key>
+  <key attr.name="Source" attr.type="string" for="edge" id="d12">
+    <default/>
+  </key>
+  <key attr.name="Target" attr.type="string" for="edge" id="d13">
+    <default/>
+  </key>
+  <key attr.name="Properties" attr.type="string" for="edge" id="d14">
+    <default/>
+  </key>
+  <key attr.name="Role in source" attr.type="string" for="edge" id="d15">
+    <default/>
+  </key>
+  <key attr.name="Role in target" attr.type="string" for="edge" id="d16">
+    <default/>
+  </key>
+  <key attr.name="Default" attr.type="string" for="edge" id="d17">
+    <default/>
+  </key>
+  <key attr.name="url" attr.type="string" for="edge" id="d18"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d19"/>
+  <key for="edge" id="d20" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <data key="d10"/>
+    <node id="n0">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1684.4745170668343" y="-1796.6693653701209"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="88.01171875" x="90.994140625" y="2.6494140625">D-MILS System<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1094.2862504001675" y="-1935.6118260866085"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="84.6953125" x="92.65234375" y="2.6494140625">formal property<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1684.4745170668343" y="-1456.0"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="152.078125" x="58.9609375" y="2.6494140625">trusted software component<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1082.4223904665937" y="-943.7637247167634"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="178.755859375" x="45.6220703125" y="2.6494140625">assumed environmental property<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1684.4745170668343" y="-1133.4034151110516"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="199.427734375" x="35.2861328125" y="2.6494140625">component MILS-AADL specification<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n5">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=SubjectType
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-1169.988879342383" y="-1479.4532662088266"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="70.703125" x="53.67298705882695" y="26.102680271326562">SubjectType<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=ContractRqt
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-920.3510653982294" y="-1657.7269046536333"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="68.025390625" x="55.011854246326834" y="26.102680271326562">ContractRqt<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=SystemType
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-1169.988879342383" y="-1820.1226315789474"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="70.685546875" x="53.68177612132695" y="26.102680271326562">SystemType<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=Technique
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-712.3019662805757" y="-1657.7269046536333"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="60.0390625" x="59.005018308826834" y="26.102680271326562">Technique<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n9">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=Contract
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-853.8359491272689" y="-1820.1226315789474"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="49.3515625" x="64.34876830882683" y="26.102680271326562">Contract<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n10">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=Guarantee
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-272.01273899150624" y="-1708.2910526315795"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="60.70703125" x="58.671033933826834" y="26.102680271326562">Guarantee<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n11">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=Assumption
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-504.25286716292203" y="-1657.7269046536333"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="66.6953125" x="55.676893308826834" y="26.102680271326562">Assumption<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=SubjectImpl
+String ModelName=aadlModel]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-1148.3148268977743" y="-1242.9857894736842"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="66.6953125" x="55.67689330882695" y="26.102680271326562">SubjectImpl<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n13">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1213.0227679894952" y="-1022.6383913834302"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="56.04296875" x="106.978515625" y="2.6494140625">technique<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n14">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1706.8850837789685" y="-1610.8203722359801"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="74.037109375" x="97.9814453125" y="2.6494140625">property type<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n15">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1684.4745170668343" y="-787.4365232648579"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="144.70703125" x="62.646484375" y="2.6494140625">MILS-AADL system model<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n16">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=MILSAADLModel
+String ModelName=starlightManual]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="178.04909911765367" x="-869.1339338295886" y="-798.1914518177771"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="96.0390625" x="41.005018308826834" y="26.102680271326562">MILSAADLModel<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n17">
+      <data key="d4"><![CDATA[RoleBinding]]></data>
+      <data key="d5"><![CDATA[String ElementType=flowImplementation]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="24.0" width="270.0" x="-1684.4745170668343" y="-641.5755189422837"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="133.36328125" x="68.318359375" y="2.6494140625">D-MILS system property<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n18">
+      <data key="d4"><![CDATA[AADLmodelElement]]></data>
+      <data key="d5"><![CDATA[String ElementType=SystemProp
+String ModelName=starlightManual]]></data>
+      <data key="d6"><![CDATA[Text]]></data>
+      <data key="d9">
+        <y:ShapeNode>
+          <y:Geometry height="70.90653241765312" width="151.98616578432052" x="-856.7883338295887" y="-653.9592873123974"/>
+          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" visible="true" width="69.35546875" x="41.31534851716026" y="26.102680271326562">SystemProp<y:LabelModel>
+              <y:SmartNodeLabelModel distance="4.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
+            </y:ModelParameter>
+          </y:NodeLabel>
+          <y:Shape type="rectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <edge id="e0" source="n7" target="n5">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=subcomponents,processSubcomponent]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true" width="4.0" x="-31.999974314805968" y="132.88138176806456">
+            <y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="30.0" distanceToCenter="true" position="right" ratio="0.5" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n2" target="n5">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n7" target="n6">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=properties,propertyAssociation]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n0" target="n7">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n7" target="n8">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=annotations,contract,value]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n7" target="n9">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=properties,propertyAssociation]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n9" target="n6">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=properties,propertyAssociation]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-32.81800468892118" ty="-2.4169193783227456"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n9" target="n8">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=value]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="-5.8854364816519364" sy="2.2737367544323206E-13" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n7" target="n10">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=annotations,contract,guarantee]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n9" target="n10">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=guarantee]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n7" target="n11">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=annotations,contract,assume]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n9" target="n11">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=assume]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="-0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n1" target="n10">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="16.775569698413392" sy="0.8442095474442795" tx="11.786084169521587" ty="-3.1790556825105796"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e13" source="n3" target="n11">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="12.550250115716835" sy="3.0419001553600538" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e14" source="n5" target="n12">
+      <data key="d11"><![CDATA[metaDep]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[path=implementations]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="-8.883550394913982" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e15" source="n4" target="n12">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="15.787119444210475" ty="7.852523264858291"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e16" source="n13" target="n8">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="-0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e17" source="n14" target="n6">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d12"><![CDATA[Source]]></data>
+      <data key="d13"><![CDATA[Target]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-14.957694686913214" ty="4.909427918491247"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e18" source="n15" target="n16">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="-89.02454955882683" ty="0.0">
+            <y:Point x="-1124.745169471565" y="-775.4365232648579"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e19" source="n17" target="n18">
+      <data key="d11"><![CDATA[Mapping]]></data>
+      <data key="d14"><![CDATA[targetProperty=name]]></data>
+      <data key="d20">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="dashed" width="1.0"/>
+          <y:Arrows source="none" target="plain"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d0">
+    <y:Resources/>
+  </data>
+</graphml>

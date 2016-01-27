@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gsnmetamodel:Case xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsnmetamodel="http://gsnmetamodel/1.0" id="Assurance Case">
+  <contains xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityTrust">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA Contract Checking"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: activityTrust">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over performance of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="RStrat: activityTrust" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityParts">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA Contract Checking"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="participants are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R2DGoal: activityParts" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: tool.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: tool.0.1" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolAppro.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for the activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolAppro.0.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolProv.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary assurance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolProv.0.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.9"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: provenance.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: provenance.0.1" hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.11"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolQualify.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is qualified to the required standard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: toolQualify.0.1" hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.13"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: integrity.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="High"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: integrity.0.1" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.15"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: objectives.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="meets its defined objectives"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: objectives.0.1" hasSource="//@contains.0/@ArgumentElements.9" hasTarget="//@contains.0/@ArgumentElements.17"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evaluations.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of tool operation demonstrates the defined tool objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: evaluations.1" hasSource="//@contains.0/@ArgumentElements.17" hasTarget="//@contains.0/@ArgumentElements.19"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: evaluations.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: evaluations.1" hasSource="//@contains.0/@ArgumentElements.19" hasTarget="//@contains.0/@ArgumentElements.21"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalTool.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of tool"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalTool.0.1.1" hasSource="//@contains.0/@ArgumentElements.21" hasTarget="//@contains.0/@ArgumentElements.23"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.1.1" hasSource="//@contains.0/@ArgumentElements.23" hasTarget="//@contains.0/@ArgumentElements.25"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.25" hasTarget="//@contains.0/@ArgumentElements.27"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Tool will not incorrectly report a positive result"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.1.1" hasSource="//@contains.0/@ArgumentElements.25" hasTarget="//@contains.0/@ArgumentElements.29"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.1.1" hasSource="//@contains.0/@ArgumentElements.25" hasTarget="//@contains.0/@ArgumentElements.31"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.1.1" hasSource="//@contains.0/@ArgumentElements.23" hasTarget="//@contains.0/@ArgumentElements.33"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.1.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.35"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.1.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.37"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolDev.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The development of the tool ensures the objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: toolDev.1" hasSource="//@contains.0/@ArgumentElements.17" hasTarget="//@contains.0/@ArgumentElements.39"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: toolDev.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over tool development process"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: toolDev.1" hasSource="//@contains.0/@ArgumentElements.39" hasTarget="//@contains.0/@ArgumentElements.41"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: activities.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseCon: activities.1" hasSource="//@contains.0/@ArgumentElements.41" hasTarget="//@contains.0/@ArgumentElements.43"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: tool.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: tool.0.2" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.45"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolAppro.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for the activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolAppro.0.2" hasSource="//@contains.0/@ArgumentElements.45" hasTarget="//@contains.0/@ArgumentElements.47"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolProv.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary assurance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolProv.0.2" hasSource="//@contains.0/@ArgumentElements.45" hasTarget="//@contains.0/@ArgumentElements.49"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: provenance.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: provenance.0.2" hasSource="//@contains.0/@ArgumentElements.49" hasTarget="//@contains.0/@ArgumentElements.51"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolQualify.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is qualified to the required standard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: toolQualify.0.2" hasSource="//@contains.0/@ArgumentElements.49" hasTarget="//@contains.0/@ArgumentElements.53"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: integrity.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="High"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: integrity.0.2" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.55"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: objectives.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="meets its defined objectives"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: objectives.0.2" hasSource="//@contains.0/@ArgumentElements.49" hasTarget="//@contains.0/@ArgumentElements.57"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evaluations.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of tool operation demonstrates the defined tool objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: evaluations.2" hasSource="//@contains.0/@ArgumentElements.57" hasTarget="//@contains.0/@ArgumentElements.59"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: evaluations.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: evaluations.2" hasSource="//@contains.0/@ArgumentElements.59" hasTarget="//@contains.0/@ArgumentElements.61"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalTool.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of tool"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalTool.0.2.1" hasSource="//@contains.0/@ArgumentElements.61" hasTarget="//@contains.0/@ArgumentElements.63"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.2.1" hasSource="//@contains.0/@ArgumentElements.63" hasTarget="//@contains.0/@ArgumentElements.65"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.65" hasTarget="//@contains.0/@ArgumentElements.67"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Tool output is semantically equivalent to input"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.2.1" hasSource="//@contains.0/@ArgumentElements.65" hasTarget="//@contains.0/@ArgumentElements.69"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.2.1" hasSource="//@contains.0/@ArgumentElements.65" hasTarget="//@contains.0/@ArgumentElements.71"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.2.1" hasSource="//@contains.0/@ArgumentElements.63" hasTarget="//@contains.0/@ArgumentElements.73"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.2.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.75"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.2.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.77"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolDev.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The development of the tool ensures the objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: toolDev.2" hasSource="//@contains.0/@ArgumentElements.57" hasTarget="//@contains.0/@ArgumentElements.79"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: toolDev.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over tool development process"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: toolDev.2" hasSource="//@contains.0/@ArgumentElements.79" hasTarget="//@contains.0/@ArgumentElements.81"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: activities.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseCon: activities.2" hasSource="//@contains.0/@ArgumentElements.81" hasTarget="//@contains.0/@ArgumentElements.83"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityReqs">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA Contract Checking"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required and produced artefacts are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R2DGoal: activityReqs" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.85"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artTrust.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="MILS-AADL model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: artTrust.0.1" hasSource="//@contains.0/@ArgumentElements.85" hasTarget="//@contains.0/@ArgumentElements.87"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefact evaluations.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of artefact demonstrate correctness"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefact evaluations.1" hasSource="//@contains.0/@ArgumentElements.87" hasTarget="//@contains.0/@ArgumentElements.89"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefactConf.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Set of evaluations performed provide sufficient confidence in the artefact"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefactConf.1" hasSource="//@contains.0/@ArgumentElements.87" hasTarget="//@contains.0/@ArgumentElements.91"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: prodArtTrust.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: prodArtTrust.1" hasSource="//@contains.0/@ArgumentElements.89" hasTarget="//@contains.0/@ArgumentElements.93"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artTrust.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA contract specification"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: artTrust.0.2" hasSource="//@contains.0/@ArgumentElements.85" hasTarget="//@contains.0/@ArgumentElements.95"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefact evaluations.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of artefact demonstrate correctness"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefact evaluations.2" hasSource="//@contains.0/@ArgumentElements.95" hasTarget="//@contains.0/@ArgumentElements.97"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefactConf.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Set of evaluations performed provide sufficient confidence in the artefact"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefactConf.2" hasSource="//@contains.0/@ArgumentElements.95" hasTarget="//@contains.0/@ArgumentElements.99"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: prodArtTrust.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: prodArtTrust.2" hasSource="//@contains.0/@ArgumentElements.97" hasTarget="//@contains.0/@ArgumentElements.101"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalArt.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA spec consistency check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of artefact"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalArt.0.2.1" hasSource="//@contains.0/@ArgumentElements.101" hasTarget="//@contains.0/@ArgumentElements.103"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA spec consistency check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.2.1" hasSource="//@contains.0/@ArgumentElements.103" hasTarget="//@contains.0/@ArgumentElements.105"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA specification is consistent"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.2.1" hasSource="//@contains.0/@ArgumentElements.105" hasTarget="//@contains.0/@ArgumentElements.107"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.2.1" hasSource="//@contains.0/@ArgumentElements.105" hasTarget="//@contains.0/@ArgumentElements.109"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.105" hasTarget="//@contains.0/@ArgumentElements.111"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA contract specification"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.2.1" hasSource="//@contains.0/@ArgumentElements.103" hasTarget="//@contains.0/@ArgumentElements.113"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.2.1" hasSource="//@contains.0/@ArgumentElements.113" hasTarget="//@contains.0/@ArgumentElements.115"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.2.1" hasSource="//@contains.0/@ArgumentElements.113" hasTarget="//@contains.0/@ArgumentElements.117"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityTech">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA Contract Checking"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="techniques used are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R2DGoal: activityTech" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.119"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techniqueTrust.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: techniqueTrust.0.1" hasSource="//@contains.0/@ArgumentElements.119" hasTarget="//@contains.0/@ArgumentElements.121"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techAppro.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: techAppro.0.1" hasSource="//@contains.0/@ArgumentElements.121" hasTarget="//@contains.0/@ArgumentElements.123"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techProv.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary provenance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: techProv.0.1" hasSource="//@contains.0/@ArgumentElements.121" hasTarget="//@contains.0/@ArgumentElements.125"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: provenance.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: provenance.1" hasSource="//@contains.0/@ArgumentElements.125" hasTarget="//@contains.0/@ArgumentElements.127"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: subActivities">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA Contract Checking"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="sub-activities are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R2DGoal: subActivities" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.129"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: subActivit.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Translation MILS-AADL to OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: subActivit.0.1" hasSource="//@contains.0/@ArgumentElements.129" hasTarget="//@contains.0/@ArgumentElements.131"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: activityTrust.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over performance of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: activityTrust.1" hasSource="//@contains.0/@ArgumentElements.131" hasTarget="//@contains.0/@ArgumentElements.133"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityParts.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Translation MILS-AADL to OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="participants are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityParts.0.1" hasSource="//@contains.0/@ArgumentElements.133" hasTarget="//@contains.0/@ArgumentElements.135"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: tool.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: tool.0.1.1" hasSource="//@contains.0/@ArgumentElements.135" hasTarget="//@contains.0/@ArgumentElements.137"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolAppro.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for the activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolAppro.0.1.1" hasSource="//@contains.0/@ArgumentElements.137" hasTarget="//@contains.0/@ArgumentElements.139"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolProv.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary assurance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolProv.0.1.1" hasSource="//@contains.0/@ArgumentElements.137" hasTarget="//@contains.0/@ArgumentElements.141"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: provenance.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: provenance.0.1.1" hasSource="//@contains.0/@ArgumentElements.141" hasTarget="//@contains.0/@ArgumentElements.143"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolQualify.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is qualified to the required standard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: toolQualify.0.1.1" hasSource="//@contains.0/@ArgumentElements.141" hasTarget="//@contains.0/@ArgumentElements.145"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: integrity.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="High"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: integrity.0.1.1" hasSource="//@contains.0/@ArgumentElements.145" hasTarget="//@contains.0/@ArgumentElements.147"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: objectives.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="meets its defined objectives"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: objectives.0.1.1" hasSource="//@contains.0/@ArgumentElements.141" hasTarget="//@contains.0/@ArgumentElements.149"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evaluations.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of tool operation demonstrates the defined tool objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: evaluations.1" hasSource="//@contains.0/@ArgumentElements.149" hasTarget="//@contains.0/@ArgumentElements.151"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: evaluations.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: evaluations.1" hasSource="//@contains.0/@ArgumentElements.151" hasTarget="//@contains.0/@ArgumentElements.153"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalTool.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of tool"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalTool.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.153" hasTarget="//@contains.0/@ArgumentElements.155"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.155" hasTarget="//@contains.0/@ArgumentElements.157"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.157" hasTarget="//@contains.0/@ArgumentElements.159"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Tool output is semantically equivalent to input"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.157" hasTarget="//@contains.0/@ArgumentElements.161"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.157" hasTarget="//@contains.0/@ArgumentElements.163"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Compass Tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.155" hasTarget="//@contains.0/@ArgumentElements.165"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.165" hasTarget="//@contains.0/@ArgumentElements.167"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.165" hasTarget="//@contains.0/@ArgumentElements.169"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolDev.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The development of the tool ensures the objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: toolDev.1" hasSource="//@contains.0/@ArgumentElements.149" hasTarget="//@contains.0/@ArgumentElements.171"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: toolDev.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over tool development process"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: toolDev.1" hasSource="//@contains.0/@ArgumentElements.171" hasTarget="//@contains.0/@ArgumentElements.173"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: activities.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseCon: activities.1" hasSource="//@contains.0/@ArgumentElements.173" hasTarget="//@contains.0/@ArgumentElements.175"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityReqs.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Translation MILS-AADL to OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required and produced artefacts are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityReqs.0.1" hasSource="//@contains.0/@ArgumentElements.133" hasTarget="//@contains.0/@ArgumentElements.177"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artTrust.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA contract specification"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: artTrust.0.1.1" hasSource="//@contains.0/@ArgumentElements.177" hasTarget="//@contains.0/@ArgumentElements.179"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefact evaluations.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of artefact demonstrate correctness"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefact evaluations.1" hasSource="//@contains.0/@ArgumentElements.179" hasTarget="//@contains.0/@ArgumentElements.181"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: artefactConf.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Set of evaluations performed provide sufficient confidence in the artefact"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueGoal: artefactConf.1" hasSource="//@contains.0/@ArgumentElements.179" hasTarget="//@contains.0/@ArgumentElements.183"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: prodArtTrust.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: prodArtTrust.1" hasSource="//@contains.0/@ArgumentElements.181" hasTarget="//@contains.0/@ArgumentElements.185"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalArt.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA spec consistency check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of artefact"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalArt.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.185" hasTarget="//@contains.0/@ArgumentElements.187"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA spec consistency check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.187" hasTarget="//@contains.0/@ArgumentElements.189"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA specification is consistent"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.189" hasTarget="//@contains.0/@ArgumentElements.191"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.189" hasTarget="//@contains.0/@ArgumentElements.193"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.189" hasTarget="//@contains.0/@ArgumentElements.195"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA contract specification"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.187" hasTarget="//@contains.0/@ArgumentElements.197"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.197" hasTarget="//@contains.0/@ArgumentElements.199"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.197" hasTarget="//@contains.0/@ArgumentElements.201"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityTech.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Translation MILS-AADL to OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="techniques used are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityTech.0.1" hasSource="//@contains.0/@ArgumentElements.133" hasTarget="//@contains.0/@ArgumentElements.203"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: subActivit.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA refinement check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: subActivit.0.2" hasSource="//@contains.0/@ArgumentElements.129" hasTarget="//@contains.0/@ArgumentElements.205"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: activityTrust.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over performance of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: activityTrust.2" hasSource="//@contains.0/@ArgumentElements.205" hasTarget="//@contains.0/@ArgumentElements.207"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityParts.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA refinement check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="participants are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityParts.0.2" hasSource="//@contains.0/@ArgumentElements.207" hasTarget="//@contains.0/@ArgumentElements.209"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: tool.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: tool.0.2.1" hasSource="//@contains.0/@ArgumentElements.209" hasTarget="//@contains.0/@ArgumentElements.211"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolAppro.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for the activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolAppro.0.2.1" hasSource="//@contains.0/@ArgumentElements.211" hasTarget="//@contains.0/@ArgumentElements.213"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolProv.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary assurance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: toolProv.0.2.1" hasSource="//@contains.0/@ArgumentElements.211" hasTarget="//@contains.0/@ArgumentElements.215"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: provenance.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: provenance.0.2.1" hasSource="//@contains.0/@ArgumentElements.215" hasTarget="//@contains.0/@ArgumentElements.217"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolQualify.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is qualified to the required standard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: toolQualify.0.2.1" hasSource="//@contains.0/@ArgumentElements.215" hasTarget="//@contains.0/@ArgumentElements.219"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: integrity.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="High"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: integrity.0.2.1" hasSource="//@contains.0/@ArgumentElements.219" hasTarget="//@contains.0/@ArgumentElements.221"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: objectives.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="meets its defined objectives"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: objectives.0.2.1" hasSource="//@contains.0/@ArgumentElements.215" hasTarget="//@contains.0/@ArgumentElements.223"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evaluations.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of tool operation demonstrates the defined tool objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: evaluations.1" hasSource="//@contains.0/@ArgumentElements.223" hasTarget="//@contains.0/@ArgumentElements.225"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: evaluations.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: evaluations.1" hasSource="//@contains.0/@ArgumentElements.225" hasTarget="//@contains.0/@ArgumentElements.227"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalTool.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of tool"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: evalTool.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.227" hasTarget="//@contains.0/@ArgumentElements.229"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalRes.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool testing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="result demonstrates defined criterion is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalRes.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.229" hasTarget="//@contains.0/@ArgumentElements.231"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: evalRes.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: evalRes.1" hasSource="//@contains.0/@ArgumentElements.231" hasTarget="//@contains.0/@ArgumentElements.233"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: criterion.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Tool will not incorrectly report a positive result"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: criterion.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.231" hasTarget="//@contains.0/@ArgumentElements.235"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Just: rationale.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=""/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Just: rationale.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.231" hasTarget="//@contains.0/@ArgumentElements.237"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalAppropriate.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Evaluation result is appropriate for evaluating"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: evalAppropriate.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.229" hasTarget="//@contains.0/@ArgumentElements.239"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactVersion.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactVersion.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.239" hasTarget="//@contains.0/@ArgumentElements.241"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: artefactDate.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Wed Sep 09 00:00:00 BST 2015"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R22Con: artefactDate.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.239" hasTarget="//@contains.0/@ArgumentElements.243"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolDev.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The development of the tool ensures the objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: toolDev.1" hasSource="//@contains.0/@ArgumentElements.223" hasTarget="//@contains.0/@ArgumentElements.245"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: toolDev.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over tool development process"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: toolDev.1" hasSource="//@contains.0/@ArgumentElements.245" hasTarget="//@contains.0/@ArgumentElements.247"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: activities.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseCon: activities.1" hasSource="//@contains.0/@ArgumentElements.247" hasTarget="//@contains.0/@ArgumentElements.249"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityReqs.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA refinement check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required and produced artefacts are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityReqs.0.2" hasSource="//@contains.0/@ArgumentElements.207" hasTarget="//@contains.0/@ArgumentElements.251"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityTech.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA refinement check"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="techniques used are sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: activityTech.0.2" hasSource="//@contains.0/@ArgumentElements.207" hasTarget="//@contains.0/@ArgumentElements.253"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techniqueTrust.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: techniqueTrust.0.2.1" hasSource="//@contains.0/@ArgumentElements.253" hasTarget="//@contains.0/@ArgumentElements.255"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techAppro.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: techAppro.0.2.1" hasSource="//@contains.0/@ArgumentElements.255" hasTarget="//@contains.0/@ArgumentElements.257"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: techProv.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="OCRA"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary provenance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: techProv.0.2.1" hasSource="//@contains.0/@ArgumentElements.255" hasTarget="//@contains.0/@ArgumentElements.259"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: provenance.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: provenance.1" hasSource="//@contains.0/@ArgumentElements.259" hasTarget="//@contains.0/@ArgumentElements.261"/>
+  </contains>
+</gsnmetamodel:Case>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<process:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:process="http://process/1.0">
+  <ownedActivity name="OCRA Contract Checking">
+    <subActivity name="Translation MILS-AADL to OCRA" participant="//@ownedParticipant.1">
+      <requiredArtefact href="OCRAVerificationEvidence2.evidence#//@artefact.0/@artefact.0"/>
+      <producedArtefact href="OCRAVerificationEvidence2.evidence#//@artefact.0/@artefact.1"/>
+    </subActivity>
+    <subActivity name="OCRA refinement check" participant="//@ownedParticipant.0" technique="//@ownedTechnique.0">
+      <requiredArtefact href="OCRAVerificationEvidence2.evidence#//@artefact.0/@artefact.1"/>
+      <requiredArtefact href="OCRAVerificationEvidence2.evidence#//@artefact.0/@artefact.0"/>
+    </subActivity>
+  </ownedActivity>
+  <ownedParticipant xsi:type="process:Tool" name="OCRA tool" version="?" objective="Verify requirements formalized into OCRA contracts" integrity="High">
+    <evaluation id="" name="OCRA tool testing" criterion="Tool will not incorrectly report a positive result" evaluationResult="Test report ref ?"/>
+  </ownedParticipant>
+  <ownedParticipant xsi:type="process:Tool" name="Compass Tool" version="?" objective="Translate MILS-AADL specification to OCRA" integrity="High">
+    <evaluation name="Compass tool testing" criterion="Tool output is semantically equivalent to input" evaluationResult="Test report ref ?"/>
+  </ownedParticipant>
+  <ownedTechnique name="OCRA" provenance="OCRA technique is justified as method for checking properties in report ref ?"/>
+</process:ProcessModel>

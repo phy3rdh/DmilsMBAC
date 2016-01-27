@@ -1,0 +1,1386 @@
+//this version creates a complete GSN XML as well as an instantiation table from a GSNML file pattern model
+//TODO:
+//Non-direct dependencies
+
+"Instantiating ...".println();
+var assuranceCase = InstantiatedGSNPattern.createInstance("Case");
+var moduleList = new Native("java.util.ArrayList");
+var module = InstantiatedGSNPattern.createInstance("GSN_Module");
+
+var useMultiplicityCounter = false;
+var multiplicityCounter = 0;
+var testCounter = "0";
+var refElementModelName;
+
+moduleList.add(module);
+assuranceCase.eSet(assuranceCase.eClass().getEStructuralFeature("id"), "Assurance Case");
+assuranceCase.eSet(assuranceCase.eClass().getEStructuralFeature("contains"), moduleList);
+
+var targetModel="aadlModel";
+var ref;
+var modelName=patternInstantiation;
+var tag="none";
+
+var elements = patternInstantiation!t_ArgumentElements.all;
+
+var nodes = elements.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+var edges = elements.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+
+//work out the real id of the source and target nodes and ste as an attribute
+for (e in edges){
+	
+	var nOfSource=e.a_hasSource.substring(32).asInteger();
+	var sourceID = elements.at(nOfSource).a_id;
+	e.a_source=sourceID;
+	var nOfTarget=e.a_hasTarget.substring(32).asInteger();
+	var targetID = elements.at(nOfTarget).a_id;
+	e.a_target=targetID;
+	}
+
+var welements = weaving.muddle.elements;
+var wedges = welements.select(e|e.type.eClass().name = "LinkElementType");
+
+var table = new XMLDoc!t_table;
+XMLDoc.root = table;
+
+var argument = new XMLDoc2!t_contains;
+argument.a_xsitype="gsnmetamodel:GSN_Module";
+argument.a_id = "Module A";
+XMLDoc2.root = argument;
+
+
+for (n in nodes){
+	if(n.a_tobeInstantiated="true"){
+		n.instantiate();
+	}
+	else{
+		var i = n.`a_xsi:type`;
+		var literal=n.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+		var lit;
+		for(l in literal){
+			lit=l.a_literal;
+		}
+		//TO DO this will not currently work properly if multiple roles are declared for a single element
+		switch (i) {
+			case "gsnmetamodel:GSN_Goal" : argument.createGoal(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag);
+			case "gsnmetamodel:GSN_Strategy" : argument.createStrategy(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag);
+			case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag);
+			case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag);
+			case "gsnmetamodel:GSN_Justification" : argument.createGoal(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag); 
+			case "gsnmetamodel:GSN_Assumption" : argument.createGoal(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag);
+			case "gsnmetamodel:GSN_Solution" : argument.createSolution(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag); 
+			case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal(n.a_id, false, n.`a_xsi:type`, lit, (" "), tag, n.a_modRef);
+		}	
+		var p;
+		var sourceNode;
+		for(e in edges){
+			if(e.a_target=n.a_id){
+				p=e.`a_xsi:type`;
+				sourceNode =e.a_source;
+			}
+		}
+		switch (p) {
+			case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R"+n.a_id), sourceNode, n.a_id);
+			case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R"+n.a_id), sourceNode, n.a_id);
+		}
+	}
+}
+formatOutputForDiagramCreation();
+"Instantiation Process Complete: See Ouput File ".println();
+
+operation Any findProperty(modelElement : Any, name : Any) : Any
+{
+	var tmp;
+ 	var tst = name;
+ 	var tst2;
+ 	tst = name;
+ 	tst2 = modelElement;
+ 	tmp = modelElement.eClass.getEAllStructuralFeatures();
+ 	var ret;
+ 	for(i in tmp)
+ 	{
+ 		if(i.getName()=tst)
+ 		{
+ 			ret = tst2.eGet(i);
+ 			return ret;
+ 		}
+ 	}
+ 	return null;
+}
+
+operation Any instantiate(){
+	self.doInstantiation(0);
+}
+
+operation Any doInstantiation(count){
+	var c=count;
+	var done=false;
+	var i = self.`a_xsi:type`; 
+	if(i="gsnmetamodel:Choice"){
+		self.makeChoice();
+		done=true;
+	}
+	var ele = modelName!t_ArgumentElements.all;
+	var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+	for (e in edge){
+		if (e.a_target = self.a_id) {
+			if (e.a_multiplicity.length()<>0) {
+				self.makeMultiples(c);
+				done=true;
+			}
+		}
+	}		
+	if(done=false){	
+		self.makeInstance(c);
+	}
+}
+
+
+operation Any makeInstance(count){
+
+	var role=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");
+	for(r in role){
+		//TO DO this will not currently work properly if multiple roles are declared for a single element
+		var i = r.a_role; 
+		var c=count;	
+		var mappings = wedges.select(f|f.Type.name="Mapping");
+		var mapFound=false;
+		var targetProperty = "name";
+		for(m in mappings){
+			if (m.Source.Text=i) {
+				mapFound=true;
+				if(m.targetProperty <> null)
+				{
+					targetProperty=m.targetProperty;
+				}
+				self.findMapping(m.Target.Text, m.Target.ElementType ,c, true, targetProperty);
+			}
+		}
+		if (mapFound=false) {
+			tag="noBind";
+			var i = self.`a_xsi:type`;
+			var ele = modelName!t_ArgumentElements.all;
+			var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+			var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+			var edgeType;
+			var source;										
+			for(e in edge){
+				if(e.a_target=self.a_id){
+					edgeType=e.`a_xsi:type`;
+					source=e.a_source;
+				}
+			}
+			var literal=self.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+			var lit;
+			for(l in literal){
+				lit=l.a_literal;
+			}
+			//TO DO this will not currently work properly if multiple roles are declared for a single element
+			var outputID;
+			var outputSourceID;
+			if(c > 0 )
+			{
+				outputID = self.a_id   + "." + testCounter;
+				outputSourceID = source + "." + testCounter;
+			}
+			else
+			{
+				outputID = self.a_id;
+				outputSourceID = source;
+			}	
+			
+			//TR-2015 AUG
+			table.createEntry((outputID), "No mapping for role found in weaving model", r.a_role);	
+		
+			switch (i) {
+				case "gsnmetamodel:GSN_Goal" : argument.createGoal(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Strategy" : argument.createStrategy(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Justification" : argument.createGoal(outputID, false, self.`a_xsi:type`, lit, (" "), tag); 
+				case "gsnmetamodel:GSN_Assumption" : argument.createGoal(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Solution" : argument.createSolution(outputID, false, self.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal(outputID, false, n.`a_xsi:type`, lit, (" "), tag, n.a_modRef); 
+			}
+			if(useMultiplicityCounter == true)
+			{
+				switch (edgeType)
+				{
+					case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport("MULTI EDGE MKINS "+ self.a_id + "." + testCounter,source +"." + testCounter, self.a_id + "." +testCounter);
+					case "gsnmetamodel:GSN_InContextOf" : argument.createInContext("MULTI EDGE MKINS "+ self.a_id + "." + testCounter, source +"." + testCounter, self.a_id + "." +testCounter);
+				}
+			}
+			else
+			{	
+				switch (edgeType)
+				{
+					case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(outputID,outputSourceID, outputID);
+					case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(outputID, outputSourceID, outputID);
+				}
+			}	
+			tag="none";	
+		}
+	}
+}
+
+					
+operation Any findMetaDepTarget(source, path, gsnNode, c, instantiate, targetProperty,targetType) : Any
+{
+	var results = new Native("java.util.ArrayList");
+	var isNull = false;
+	var isMulti = false;
+	var tmp = source;
+	var target;
+	var pathRemaining;
+ 	var seenTokens : OrderedSet;
+ 	for(token in path)
+ 	{
+ 		if(isNull = true or isMulti = true)
+ 		{
+ 			break;
+ 		}
+ 		seenTokens.add(token);
+ 		pathRemaining = path.excludingAll(seenTokens);										
+ 		for(r in tmp.eClass().getEAllReferences())
+ 		{
+ 			if(r.getName() = token )
+ 			{
+ 				target = tmp.eGet(r);
+ 				if(target = null)
+ 				{
+ 					isNull = true;
+ 					break;
+ 				}
+ 				
+ 				else if(target.instanceOf(Collection))
+ 				{
+ 					for(ele in target)
+ 					{
+ 						results.addAll(findMetaDepTarget(ele, pathRemaining,gsnNode, c,instantiate, targetProperty,targetType));
+ 					}
+ 					isMulti = true;	
+ 					break;								
+ 				}
+ 				else
+ 				{
+ 					tmp = target;
+ 				}										
+ 			}
+ 		}
+ 	}
+ 	
+ 	if(isMulti = true)
+ 	{
+ 		//do nothing
+ 	}
+ 	else if(isNull = true)
+ 	{
+ 		tag="noModel";
+		var i = gsnNode.`a_xsi:type`;				
+		var literal=gsnNode.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+		var lit;
+		for(l in literal){
+			lit=l.a_literal;
+		}		
+		if(instantiate == true)
+		{
+			//TR-2015 AUG
+			var role=gsnNode.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");	
+			for(r in role)
+			{
+				table.createEntry((gsnNode.a_id+"."+testCounter), "Meta dep target not found in target model", r.a_role);	
+			}	
+			switch (i) {
+				case "gsnmetamodel:GSN_Goal" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Strategy" : argument.createStrategy((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Justification" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag); 
+				case "gsnmetamodel:GSN_Assumption" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_Solution" : argument.createSolution((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag);
+				case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, (" "), tag, gsnNode.a_modRef);		
+			}
+		}
+			
+		var ele = modelName!t_ArgumentElements.all;
+		var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+		var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+		var p;
+		var subject;
+												
+		for(e in edge){
+			if(e.a_target=gsnNode.a_id){
+				p=e.`a_xsi:type`;
+				subject=e.a_source;
+			}
+		}
+		if(instantiate == true)
+		{
+			if(useMultiplicityCounter == true)
+			{
+				switch (p) {
+					case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R19"+gsnNode.a_id+"."+testCounter), subject +"." + testCounter, gsnNode.a_id +"."+testCounter);
+					case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R19"+gsnNode.a_id+"."+testCounter), subject +"." + testCounter, gsnNode.a_id +"."+testCounter);
+				}
+			}
+			else
+			{
+				switch (p) {
+					case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R20"+gsnNode.a_id+"."+testCounter), subject +"."+testCounter, gsnNode.a_id +"."+testCounter);
+					case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R20"+gsnNode.a_id+"."+testCounter), subject +"."+testCounter, gsnNode.a_id + "." + testCounter);
+				}
+			}
+		}						
+		tag="none";											
+ 	}
+ 	else
+ 	{
+ 		if(tmp.eClass().getName() == targetType)
+ 		{
+ 			results.add(tmp);
+ 			if(instantiate == true)
+ 			{
+ 				instantiateFromRef(tmp, gsnNode, c,targetProperty);
+ 			}
+ 		}	
+ 	}
+	return results;
+}
+
+operation Any instantiateFromRef(tmp, gsnNode, c, targetProperty)
+{
+ 	var res;
+	if(tmp.eClass().getName() = "PropertyAssociation")
+	{	
+		res = findProperty(tmp.propertyValue.get(0), "value");							
+	}
+	else
+	{
+		res = findProperty(tmp, targetProperty);					
+	}
+	res = res.asString();	
+	var role=gsnNode.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");	
+	for(r in role)
+	{
+		table.createEntry((gsnNode.a_id+"."+testCounter), res, r.a_role);	
+		
+	}	
+											
+	var ele = modelName!t_ArgumentElements.all;
+	var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+	var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+	var p;
+	var subject;											
+	for(e in edge){
+		if(e.a_target=gsnNode.a_id){
+			p=e.`a_xsi:type`;
+			subject=e.a_source;
+		}
+	}
+	var literal=gsnNode.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+	var lit;
+	for(l in literal){
+		lit=l.a_literal;
+	}										
+	var i = gsnNode.`a_xsi:type`;																																							
+	switch (i) {	
+		case "gsnmetamodel:GSN_Goal" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_Strategy" : argument.createStrategy((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);			
+		case "gsnmetamodel:GSN_Justification" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_Assumption" : argument.createGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_Solution" : argument.createSolution((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag);
+		case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal((gsnNode.a_id+"."+testCounter), false, gsnNode.`a_xsi:type`, lit, res, tag, gsnNode.a_modRef);
+	}
+	if(useMultiplicityCounter == true)
+	{
+		switch (p) {
+			case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R21"+gsnNode.a_id+"."+testCounter), subject +"." + testCounter, gsnNode.a_id +"."+testCounter);
+			case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R21"+gsnNode.a_id+"."+testCounter), subject +"." + testCounter, gsnNode.a_id +"."+testCounter);
+		}
+	}
+	else
+	{
+		switch (p) {
+			case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R22"+gsnNode.a_id+"."+testCounter), subject +"."+testCounter, gsnNode.a_id +"."+testCounter);
+			case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R22"+gsnNode.a_id+"."+testCounter), subject +"."+testCounter, gsnNode.a_id + "." + testCounter);
+		}
+	}							
+}
+
+
+operation Any findMapping(m,et, count, instantiate, targetProperty) : Any{
+
+	var map=m;
+	var c=count;
+	var mapped=false;
+	var metaDepTarget = "default";
+	var r=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");
+	var role = r.a_role;
+	var welements = weaving.muddle.elements;
+	var wnodes = welements.select(e|e.type.eClass().name = "MuddleElementType");
+	for(w in wnodes){
+		if(w.Text=map){
+			targetModel=w.ModelName;
+		}
+	}
+	var designModel = design.models.selectOne(m|m.name = targetModel.split(",").at(0));
+	if(designModel<>null){
+		if (ref<>null){
+			var result;			
+			if(instantiate = true)
+			{
+				if(ref.eClass().getName() == map)
+				{
+					mapped=true;
+					instantiateFromRef(ref, self, c, targetProperty);
+				}
+			}
+			var delements = designModel.allContents();
+			var mapElements = designModel.getAllOfType(map);
+			var p;
+			var subject;
+			var deps = wedges.select(f|f.Type.name="metaDep");
+			var exist=false;
+			for (d in deps) { 
+				if (d.Target.Text=map and d.Target.ElementType=et) {
+					if (d.Source.Text=ref.eClass().getName()) {
+						mapped=true;
+						var refModel;
+						for(token in refElementModelName.split(","))
+						{
+							refModel = design.models.selectOne(m|m.name = token);
+							var dedges3 = refModel.allContents();
+							var res3;
+							var eClass;	
+							var found = false;
+							for(obj in dedges3)
+							{
+								eClass = obj.eClass().getName();
+								if(obj.eClass().getName() = "PropertyAssociation")
+								{
+									res3 = findProperty(obj.propertyValue.get(0), "value");
+								}
+								else
+								{
+									res3 = findProperty(obj, targetProperty);
+								}	
+								if(res3 = findProperty(ref, targetProperty) and ref.eClass().getName() = eClass)
+								{
+									var s1 = d.path;	
+ 									var delim =",";
+ 									var tokens = s1.split(delim);
+ 									metaDepTarget = findMetaDepTarget(obj,tokens, self, c,instantiate, targetProperty,map);
+ 									found = true;
+								}
+							}	
+							if(found == true)
+							{
+								break;
+							}		
+						}
+					}
+				}		
+			}
+			if (mapped=false) {
+				metaDepTarget = "noMetaBind";
+				var seenElements = new Sequence();
+				var haveSeen = false;
+				for (a in mapElements) { 
+					var res;	
+					var propertyAssociationType;
+					if(a.eClass().getName() = "PropertyAssociation")
+					{
+						propertyAssociationType = findProperty(a,"name");
+						if(propertyAssociationType <> et)
+						{
+							continue;
+						}
+						res = findProperty(a.propertyValue.get(0), "value");
+					}
+					else
+					{		
+						res = findProperty(a, targetProperty);
+					}
+					res = res.asString();
+					for(element in seenElements)
+					{
+						if(element == res)
+						{
+							haveSeen = true;
+						}
+					}
+					seenElements.add(res);
+					if(haveSeen == true)
+					{
+						continue;
+					}
+					
+
+					//table.createEntry((self.a_id+"."+c), res, "");		
+					var ele = modelName!t_ArgumentElements.all;
+					var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+					var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+					for(e in edge){
+						if(e.a_target=self.a_id){
+							p=e.`a_xsi:type`;
+							subject=e.a_source;
+						}
+					}
+					var literal=self.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+					var lit;
+					for(l in literal){
+						lit=l.a_literal;
+					}			
+					var i = self.`a_xsi:type`;					
+					if(instantiate == true)
+					{
+						var role=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");	
+						for(r in role)
+						{	
+							table.createEntry((self.a_id+"."+testCounter), res, r.a_role);	
+						}
+						switch (i) {	
+							case "gsnmetamodel:GSN_Goal" : argument.createGoal(( self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Strategy" : argument.createStrategy((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Justification" : argument.createGoal((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Assumption" : argument.createGoal((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Solution" : argument.createSolution((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal((self.a_id+"."+testCounter), false, self.`a_xsi:type`, lit, res, tag, self.a_modRef);
+						}
+						if(useMultiplicityCounter == true)
+						{
+							switch (p) {
+								case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R999"+self.a_id+"."+testCounter), subject + "." + testCounter, self.a_id +"."+testCounter);
+								case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R999"+self.a_id+"."+testCounter), subject + "." + testCounter, self.a_id  +"."+testCounter);
+							}
+						}
+						else
+						{
+							switch (p) {
+								case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R999"+self.a_id+"."+testCounter), subject + "." + testCounter, self.a_id +"."+testCounter);
+								case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R999"+self.a_id+"."+testCounter), subject + "." + testCounter, self.a_id  +"."+testCounter);
+							}
+						}
+					}							
+				}
+			}
+		}
+		if (ref=null) {
+			metaDepTarget = "noMetaBind";
+			var delements2 = designModel.allContents();
+			var exists=false;
+			for (a in delements2)
+			{	
+				var type = 	a.eClass().getName();
+				var name = findProperty(a, targetProperty);
+				var res;
+				if(type = map) {
+					exists=true;
+					if(type = "PropertyAssociation")
+					{
+						if(name = et)
+						{
+							res = findProperty(a.propertyValue.get(0), "value");
+						}
+					}
+					else
+					{
+						res = name;
+					}
+					res = res.asString();	
+				
+					//table.createEntry((self.a_id+"."+c), res, self.a_role);
+					var top=true;
+					var ele = modelName!t_ArgumentElements.all;
+					var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+					var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+					for (e in edge){
+						if (e.a_target = self.a_id) {
+							top=false;
+						}
+					}
+					var p;
+					var subject;
+					var literal=self.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+					var lit;
+					for(l in literal){
+						lit=l.a_literal;
+					}
+					var i = self.`a_xsi:type`;		
+					if(instantiate == true)
+					{
+						//TR-2015 AUG
+						var role=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");	
+						for(r in role)
+						{
+							table.createEntry((self.a_id), res, r.a_role);	
+						}
+						switch (i) {
+							case "gsnmetamodel:GSN_Goal" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Strategy" : argument.createStrategy((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Justification" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Assumption" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_Solution" : argument.createSolution((self.a_id), false, self.`a_xsi:type`, lit, res, tag);
+							case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal((self.a_id), false, self.`a_xsi:type`, lit, res, tag, self.a_modRef);
+						}
+						if (top=false) {
+							var ele = modelName!t_ArgumentElements.all;
+							var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+							var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+							for(e in edge)
+							{
+								if(e.a_target=self.a_id){
+									p=e.`a_xsi:type`;
+									subject=e.a_source;
+								}
+							}	
+							switch (p) {
+								case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R2D"+self.a_id), subject, self.a_id);
+								case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R2D"+self.a_id), subject, self.a_id);
+							}
+						}
+					}
+				}	
+			}
+			if(exists=false){
+				tag="noBind";
+				var i = self.`a_xsi:type`;
+				var literal=self.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+				var lit;
+				for(l in literal){
+					lit=l.a_literal;
+				}
+				if(instantiate == true)
+				{
+					//TR-2015 AUG
+					var role=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");	
+					for(r in role)
+					{
+						table.createEntry((self.a_id), "No role bindings found in target model", r.a_role);	
+					}
+					switch (i) {
+						case "gsnmetamodel:GSN_Goal" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, (" ") + "EX FALSE", tag);
+						case "gsnmetamodel:GSN_Strategy" : argument.createStrategy((self.a_id), false, self.`a_xsi:type`, lit, (" ") + "EX FALSE", tag);
+						case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext((self.a_id), false, self.`a_xsi:type`, lit, (" ")+ "EX FALSE", tag);
+						case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext((self.a_id), false, self.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_Justification" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, (" "), tag); 
+						case "gsnmetamodel:GSN_Assumption" : argument.createGoal((self.a_id), false, self.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_Solution" : argument.createSolution((self.a_id), false, self.`a_xsi:type`, lit, (" "), tag); 
+						case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal((self.a_id), false, self.`a_xsi:type`, lit, (" "), tag, self.a_modRef);
+					}
+					var top=true;
+					var ele = modelName!t_ArgumentElements.all;
+					var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+					var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+					for (e in edge){
+						if (e.a_target = self.a_id) {
+							top=false;
+						}
+					}
+					if (top=false) {
+						var p;
+						var subject;
+						for(e in edge)
+						{
+							if(e.a_target=self.a_id){
+								p=e.`a_xsi:type`;
+								subject=e.a_source;
+							}
+						}	
+						switch (p) {
+							case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("R2D"+self.a_id), subject, self.a_id);
+							case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("R2D"+self.a_id), subject, self.a_id);
+						}
+					}
+				}
+				tag="none";
+			}
+		}
+	}
+	if(designModel=null){
+		("No model found to instantiate element").println();
+	}
+
+	return metaDepTarget;
+}
+
+operation Any makeChoice(){
+	("Making Choice at " + self.id).println();
+	("").println();
+}
+
+
+operation Any findRooteElement(node, edge, currentNode)
+{
+	for (n in node){	
+		var top=true;
+		for (e in edge){
+			if (e.a_target = n.a_id) {
+				top=false;
+			}
+		}
+		if(top == true)
+		{
+			for(e in edge)
+			{
+				if(e.a_source == n.a_id and e.a_target == currentNode.a_id)
+				{
+					useMultiplicityCounter = true;
+				}
+			}
+		}
+	}
+}
+
+operation Any makeMultiples(count){
+	var q=count;
+	var sourceOfMultiplicity;
+	var edgeType;	
+	var welements = weaving.muddle.elements;
+	var wedges = welements.select(e|e.type.eClass().name = "LinkElementType");
+	var wnodes = welements.select(e|e.type.eClass().name = "MuddleElementType");		
+	var mappings = wedges.select(f|f.Type.name="Mapping");
+	var modelElement;
+	var et;
+	var multi;
+	var ele = modelName!t_ArgumentElements.all;
+	var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+
+	for(e in edge){
+		if(e.a_target=self.a_id){
+			sourceOfMultiplicity = e.a_source;
+			edgeType = e.`a_xsi:type`;
+			multi=e.a_multiplicity;
+		}
+	}
+
+	var roleBindingFound = false;
+	var targetProperty = "name";
+	for(m in mappings){
+		if (m.Source.Text=multi) {
+			roleBindingFound = true;
+			modelElement=m.Target.Text;
+			if(m.targetProperty <> null)
+			{
+				targetProperty=m.targetProperty;
+			}
+			et = m.Target.ElementType;
+		}
+	}
+
+	var i=0;
+	var multiList : Sequence;
+	var b;
+
+	for(w in wnodes){
+		if(w.Text=et){
+			targetModel=w.ModelName;
+		}
+	}
+	var designModel = design.models.selectOne(m|m.name = targetModel.split(",").at(0));
+	var refFound=false;
+	var linkedElements;
+	if(modelElement == null)
+	{
+		linkedElements = "nometadep";
+	}
+	else
+	{
+		linkedElements = self.findMapping(modelElement,et, count, false, targetProperty);
+	}	
+	var search;
+	if(linkedElements == "noMetaBind")
+	{
+		for (a in designModel.allContents()){
+			if(a.eClass().getName() = modelElement){
+				multiList.add(a);
+				i=i+1;
+			}
+		}
+	}
+	else
+	{
+		for(k in linkedElements)
+		{
+			multiList.add(k);
+			i=i+1;
+		}
+	}
+	
+	var moduleRef=self.a_id;
+	var prevModelName = modelName;
+	var prevMultiplicityCounter = multiplicityCounter;
+	var prevTestCounter = testCounter;
+	var prevrefElementModelName = refElementModelName;
+	refElementModelName = targetModel;
+
+	var prevRef;
+	modelName = pattern.models.selectOne(m|m.name = moduleRef);
+	multiplicityCounter = q;
+	var r=self.children.select(c|c.`a_xsi:type`="gsnmetamodel:Role");
+	var role = r.a_role;
+	var p;
+	var subject;
+	var res;
+	var count=0;
+	prevRef = ref;
+	
+	while (count<i) {
+	
+		var tmp = testCounter + "." + (count+1);
+		testCounter = tmp;
+		if(multiList.at(count) == "nometadep")
+		{
+			res = "No meta dep target because no role mapping in weaving model";
+		}
+		else
+		{
+			if(multiList.at(count).eClass().getName() = "PropertyAssociation")
+			{
+				res = findProperty(multiList.at(count).propertyValue.get(0), "value");
+			}
+			else
+			{
+				res = findProperty(multiList.at(count), targetProperty);
+			}
+		}
+		res = res.asString();
+		table.createEntry(self.a_id + "." +testCounter, res, role.toString());
+		var ele = modelName!t_ArgumentElements.all;
+		var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+		var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+		
+		for(e in edge){
+			if(e.a_target=self.a_id){
+				p=e.`a_xsi:type`;
+				subject=e.a_source;
+			}
+		}
+		
+		var literal=self.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+		var lit;
+		for(l in literal){
+			lit=l.a_literal;
+		}
+		var x = self.`a_xsi:type`;	
+		switch (x) {
+			case "gsnmetamodel:GSN_Goal" : argument.createGoal(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_Strategy" : argument.createStrategy(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_Justification" : argument.createGoal(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_Assumption" : argument.createGoal(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_Solution" : argument.createSolution(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag);
+			case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal(self.a_id + "." +testCounter, false, self.`a_xsi:type`, lit, (res), tag, self.a_modRef);
+		
+		}
+	
+		var appendNumericalIdentifier;
+		if(q > 0)
+		{
+			appendNumericalIdentifier = sourceOfMultiplicity + "." + testCounter.substring(0,testCounter.lastIndexOf("."));
+		}
+		else
+		{
+			 appendNumericalIdentifier = sourceOfMultiplicity;
+		}
+		switch(edgeType)
+		{
+			case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("MULTI EDGE no count "+ self.a_id + "." +testCounter),appendNumericalIdentifier, self.a_id + "." +testCounter);
+			case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("MULTI EDGE no count "+ self.a_id + "." +testCounter), appendNumericalIdentifier, self.a_id + "." +testCounter);
+		}
+		
+		
+		ref=multiList.at(count);
+		var instElement=multiList.at(count);
+		var ele = modelName!t_ArgumentElements.all;
+		var nod = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+		var edge = ele.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsi:type` = "gsnmetamodel:GSN_InContextOf");
+	
+		for (e in edge){
+			var nOfSource=e.a_hasSource.substring(32).asInteger();
+			var sourceID = ele.at(nOfSource).a_id;
+			e.a_source=sourceID;
+			var nOfTarget=e.a_hasTarget.substring(32).asInteger();
+			var targetID = ele.at(nOfTarget).a_id;
+			e.a_target=targetID;
+		}
+	
+		var tmpNodes = nod;
+		for (x in nod){	
+			var top=true;
+			for (e in edge){
+				if (e.a_target = x.a_id) {
+					top=false;
+				}
+			}
+
+			if (top=false) {
+				findRooteElement(tmpNodes,edge,x);
+				if(x.a_tobeInstantiated="true"){			
+					x.doInstantiation(count+1); 			
+				}
+				else{
+					var i = x.`a_xsi:type`;
+					var literal=x.children.select(m|m.`a_xsi:type`="gsnmetamodel:Literal");
+					var lit;
+					for(l in literal){
+						lit=l.a_literal;
+					}
+					switch (i) {	
+						case "gsnmetamodel:GSN_Goal" : argument.createGoal(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_Strategy" : argument.createStrategy(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_ContextAsReference" : argument.createContext(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_ContextAsAssertion" : argument.createContext(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_Justification" : argument.createGoal(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag); 
+						case "gsnmetamodel:GSN_Assumption" : argument.createGoal(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag);
+						case "gsnmetamodel:GSN_Solution" : argument.createSolution(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag); 
+						case "gsnmetamodel:GSN_AwayGoal" : argument.createAwayGoal(x.a_id + "." + testCounter, false, x.`a_xsi:type`, lit, (" "), tag, x.a_modRef);
+					}
+			
+					var source;
+					var edgeType;
+					for(e in edge){
+						if(e.a_target=x.a_id){
+							source = e.a_source;
+							edgeType = e.`a_xsi:type`;	
+							multi=e.a_multiplicity;
+						}
+					}
+					if(useMultiplicityCounter == true)
+					{
+						switch(edgeType) {
+							case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("MULTI NOT INSTANT " + useMultiplicityCounter + x.a_id + "." + (count+1)), source  + "." + testCounter, x.a_id + "." + testCounter);
+							case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("MULTI NOT INSTANT "+useMultiplicityCounter+ x.a_id + "." +  (count+1)), source  + "." + testCounter, x.a_id + "." +  testCounter);
+						}
+					}
+					else
+					{
+						switch(edgeType) {
+							case "gsnmetamodel:GSN_SupportedBy" : argument.createSupport(("MULTI NOT INSTANT " + useMultiplicityCounter + x.a_id + "." + (count+1)), source  + "." +testCounter, x.a_id + "." + testCounter);
+							case "gsnmetamodel:GSN_InContextOf" : argument.createInContext(("MULTI NOT INSTANT "+useMultiplicityCounter+ x.a_id + "." +  (count+1)), source  + "." +testCounter, x.a_id + "." +  testCounter);
+						}
+					}
+				}
+			}
+			useMultiplicityCounter = false;
+		}	
+		testCounter = prevTestCounter;
+		count=count+1;
+	}
+
+	ref = prevRef;
+	refElementModelName = prevrefElementModelName;
+	modelName = prevModelName;
+	multiplicityCounter = prevMultiplicityCounter;
+
+}
+
+operation Any makeOption(){
+	("Making Optional at " + self.a_id).println();
+	("").println();
+}
+
+operation findMultiMap(a){
+	var linked=false;
+	if (ref<>null) {
+		var deps = wedges.select(f|f.Type.name="metaDep");	
+		var mapped=false;
+		for (d in deps) { 
+			if (d.Target.Text=a.eClass().getName()) {
+				if (d.Source.Text=ref.eClass().getName()) {
+					mapped=true;
+					if((a.eClass().getName() = "PropertyAssociation" and d.Target.ElementType <> findProperty(a, "name")) or (ref.eClass().getName() = "PropertyAssociation" and d.Source.ElementType <> findProperty(ref, "name")  )  )
+					{
+						mapped= false;			
+					}
+				}
+			}
+		}
+	}
+
+	if(ref=null) {
+		linked=true;	
+	}
+	
+	if (mapped=false) {
+		linked=true;
+	}
+
+	return linked;
+}
+
+
+operation XMLDoc!Element createEntry(id : String, object : String, roleBinding: String) {
+
+	var entry = new XMLDoc!t_entry;
+	entry.a_id = id;
+	entry.a_object = object;
+	//TR-2015 AUG
+	entry.a_role = roleBinding;
+	self.appendChild(entry);
+}
+
+operation Any isUndeveloped(id : String)
+{
+	var elements = modelName!t_ArgumentElements.all;
+	var nodes = elements.select(e|e.`a_xsi:type` = "gsnmetamodel:GSN_Goal" or e.`a_xsi:type` = "gsnmetamodel:GSN_Strategy" or e.`a_xsi:type` = "gsnmetamodel:GSN_Solution" or e.`a_xsi:type` = "gsnmetamodel:GSN_Assumption"or e.`a_xsi:type` = "gsnmetamodel:GSN_Justification" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsi:type` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsi:type` = "gsnmetamodel:GSN_AwayGoal");
+	var index;
+	for (n in nodes){
+		index = id.indexOf(".");
+		if(index == -1)
+		{
+			index = id.length();
+		}
+		if(n.a_id == id.substring(0,index))
+		{
+			if(n.a_undeveloped="true"){
+				return true;
+			}
+		}
+	}
+	return false;
+}
+operation XMLDoc2!Element createGoal(id : String, inst : Boolean, type: String, content: String, role: String, tag: String) {
+
+	var goal = InstantiatedGSNPattern.createInstance("GSN_Goal");
+	var contentsList = new Native("java.util.ArrayList");
+	var literal = InstantiatedGSNPattern.createInstance("Literal");
+	var roleBinding = InstantiatedGSNPattern.createInstance("Role");
+	roleBinding.eSet(roleBinding.eClass().getEStructuralFeature("role"), role);
+	literal.eSet(literal.eClass().getEStructuralFeature("literal"), content);
+	contentsList.add(roleBinding);
+	contentsList.add(literal);
+	goal.eSet(goal.eClass().getEStructuralFeature("undeveloped"), isUndeveloped(id));
+	goal.eSet(goal.eClass().getEStructuralFeature("id"), id);
+	goal.eSet(goal.eClass().getEStructuralFeature("tobeInstantiated"), inst);
+	goal.eSet(goal.eClass().getEStructuralFeature("contents"), contentsList);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(goal);
+	
+	var claim = new XMLDoc2!t_ArgumentElements;
+	claim.a_id = id;
+	claim.a_tobeInstantiated = inst;
+	claim.a_xsitype="gsnmetamodel:GSN_Goal";
+	self.appendChild(claim);
+	
+	var literal = new XMLDoc2!t_contents;
+	literal.a_literal = content;
+	literal.a_xsitype ="gsnmetamodel:Literal";
+	claim.appendChild(literal);
+	
+	var roleBinding = new XMLDoc2!t_contents;
+	roleBinding.a_role = role;
+	roleBinding.a_xsitype = "gsnmetamodel:Role";
+	claim.appendChild(roleBinding);
+	
+	if(tag="noBind"){
+		var error = new XMLDoc2!t_contents;
+		error.a_tag =("--instantiation error: No role binding specified for role: "+role+"--");
+		claim.appendChild(error);
+	}
+		
+	if(tag="noModel"){
+		var nomod = new XMLDoc2!t_contents;
+		nomod.a_tag =("--instantiation error: No model element exists to instantiate role: "+role+"--");
+		claim.appendChild(nomod);
+	}
+}
+
+
+operation XMLDoc2!Element createStrategy(id : String, inst : Boolean, type: String, content: String, role: String, tag: String) {
+
+	//TR-2015 commented out role and literal because a strategy does not have these properties according to the gsn metamodel
+	var strategy = InstantiatedGSNPattern.createInstance("GSN_Strategy");
+	var contentsList = new Native("java.util.ArrayList");
+	var literal = InstantiatedGSNPattern.createInstance("Literal");
+	var roleBinding = InstantiatedGSNPattern.createInstance("Role");
+	roleBinding.eSet(roleBinding.eClass().getEStructuralFeature("role"), role);
+	literal.eSet(literal.eClass().getEStructuralFeature("literal"), content);
+	contentsList.add(roleBinding);
+	contentsList.add(literal);
+	
+	strategy.eSet(strategy.eClass().getEStructuralFeature("id"), id);
+	//strategy.eSet(strategy.eClass().getEStructuralFeature("tobeInstantiated"), inst);
+	strategy.eSet(strategy.eClass().getEStructuralFeature("contents"), contentsList);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(strategy);
+
+	var strat = new XMLDoc2!t_ArgumentElements;
+	strat.a_id = id;
+	//TR-2015 tbinstant not in strategy
+	//strat.a_tobeInstantiated = inst;
+	strat.a_xsitype="gsnmetamodel:GSN_Strategy";
+	self.appendChild(strat);
+	var literal = new XMLDoc2!t_contents;
+	literal.a_literal = content;
+	literal.a_xsitype ="gsnmetamodel:Literal";
+	strat.appendChild(literal);
+	
+	var roleBinding = new XMLDoc2!t_contents;
+
+	roleBinding.a_role = role;
+	roleBinding.a_xsitype = "gsnmetamodel:Role";
+	strat.appendChild(roleBinding);
+	
+	if(tag="noBind"){
+		var error = new XMLDoc2!t_contents;
+		error.a_tag =("--instantiation error: No role binding specified for role: "+role+"--");
+		strat.appendChild(error);
+	}
+	
+	if(tag="noModel"){
+		var nomod = new XMLDoc2!t_contents;
+		nomod.a_tag =("--instantiation error: No model element exists to instantiate role: "+role+"--");
+		strat.appendChild(nomod);
+	}
+}
+
+
+operation XMLDoc2!Element createContext(id : String, inst : Boolean, type: String, content: String, role: String, tag: String) {
+
+	//TR-2015 need to have two methods, one for GSN_contextasassertion and one for gSN_ContextAsReference (which does not have to be instantiated and role etc))
+	var context = InstantiatedGSNPattern.createInstance("GSN_ContextAsAssertion");
+	var contentsList = new Native("java.util.ArrayList");
+	var literal = InstantiatedGSNPattern.createInstance("Literal");
+	var roleBinding = InstantiatedGSNPattern.createInstance("Role");
+	roleBinding.eSet(roleBinding.eClass().getEStructuralFeature("role"), role);
+	literal.eSet(literal.eClass().getEStructuralFeature("literal"), content);
+	contentsList.add(roleBinding);
+	contentsList.add(literal);
+	
+	context.eSet(context.eClass().getEStructuralFeature("undeveloped"), isUndeveloped(id));
+	context.eSet(context.eClass().getEStructuralFeature("id"), id);
+	context.eSet(context.eClass().getEStructuralFeature("tobeInstantiated"), inst);
+	context.eSet(context.eClass().getEStructuralFeature("contents"), contentsList);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(context);
+
+	var cont = new XMLDoc2!t_ArgumentElements;
+	cont.a_id = id;
+	//TR-2015 context as ref does not have tbinstantiated as an attribute
+	//cont.a_tobeInstantiated = inst;
+	cont.a_xsitype="gsnmetamodel:GSN_ContextAsReference";
+	
+	self.appendChild(cont);
+	var literal = new XMLDoc2!t_contents;
+	literal.a_literal = content;
+	literal.a_xsitype ="gsnmetamodel:Literal";
+	cont.appendChild(literal);
+	var roleBinding = new XMLDoc2!t_contents;
+	roleBinding.a_role = role;
+	roleBinding.a_xsitype = "gsnmetamodel:Role";
+	cont.appendChild(roleBinding);
+	
+	if(tag="noBind"){
+		var error = new XMLDoc2!t_contents;
+		error.a_tag =("--instantiation error: No role binding specified for role: "+role+"--");
+		cont.appendChild(error);
+	}
+		
+	if(tag="noModel"){
+		var nomod = new XMLDoc2!t_contents;
+		nomod.a_tag =("--instantiation error: No model element exists to instantiate role: "+role+"--");
+		cont.appendChild(nomod);
+	}
+}
+
+operation XMLDoc2!Element createSolution(id : String, inst : Boolean, type: String, content: String, role: String, tag: String) {
+
+	//TR-2015 no tbi in gsn metamodel
+	var sol = InstantiatedGSNPattern.createInstance("GSN_Solution");
+	var contentsList = new Native("java.util.ArrayList");
+	var literal = InstantiatedGSNPattern.createInstance("Literal");
+	var roleBinding = InstantiatedGSNPattern.createInstance("Role");
+	roleBinding.eSet(roleBinding.eClass().getEStructuralFeature("role"), role);
+	literal.eSet(literal.eClass().getEStructuralFeature("literal"), content);
+	contentsList.add(roleBinding);
+	contentsList.add(literal);
+	
+	sol.eSet(sol.eClass().getEStructuralFeature("id"), id);
+	//sol.eSet(sol.eClass().getEStructuralFeature("tobeInstantiated"), inst);
+	sol.eSet(sol.eClass().getEStructuralFeature("contents"), contentsList);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(sol);
+
+	var sol = new XMLDoc2!t_ArgumentElements;
+	sol.a_id = id;
+	//TR-2015 tbinstantiated not an attribute of solution
+	//sol.a_tobeInstantiated = inst;
+	sol.a_xsitype="gsnmetamodel:GSN_Solution";
+	self.appendChild(sol);
+	var literal = new XMLDoc2!t_contents;
+	literal.a_literal = content;
+	literal.a_xsitype ="gsnmetamodel:Literal";
+	sol.appendChild(literal);
+	var roleBinding = new XMLDoc2!t_contents;
+	roleBinding.a_role = role;
+	roleBinding.a_xsitype = "gsnmetamodel:Role";
+	sol.appendChild(roleBinding);
+	
+	if(tag="noBind"){
+		var error = new XMLDoc2!t_contents;
+		error.a_tag =("--instantiation error: No role binding specified for role: "+role+"--");
+		sol.appendChild(error);
+	}
+		
+	if(tag="noModel"){
+		var nomod = new XMLDoc2!t_contents;
+		nomod.a_tag =("--instantiation error: No model element exists to instantiate role: "+role+"--");
+		sol.appendChild(nomod);
+	}
+}
+
+
+operation XMLDoc2!Element createSupport(id : String, Source: String, Target: String) {
+
+	var argumentElements = new Native("java.util.ArrayList");
+	var sourceList = new Native("java.util.ArrayList");
+	var targetList = new Native("java.util.ArrayList");
+	argumentElements.addAll(module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")));
+	var sourceArgElement;
+	var targetArgElement;
+	for(arg in argumentElements)
+	{
+		if(arg.eGet(arg.eClass().getEStructuralFeature("id")) == Source)
+		{
+			sourceArgElement = arg;
+		}
+		else if(arg.eGet(arg.eClass().getEStructuralFeature("id")) == Target)
+		{
+			targetArgElement = arg;
+		}
+	}
+
+	var supportedBy = InstantiatedGSNPattern.createInstance("GSN_SupportedBy");
+	supportedBy.eSet(supportedBy.eClass().getEStructuralFeature("id"), id);
+	supportedBy.eSet(supportedBy.eClass().getEStructuralFeature("hasSource"), sourceArgElement);
+	supportedBy.eSet(supportedBy.eClass().getEStructuralFeature("hasTarget"), targetArgElement);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(supportedBy);
+
+	var supp = new XMLDoc2!t_ArgumentElements;
+	supp.a_id = id;
+	supp.a_hasSource = Source;
+	supp.a_hasTarget = Target;
+	supp.a_xsitype="gsnmetamodel:GSN_SupportedBy";
+	self.appendChild(supp);
+
+}
+
+operation XMLDoc2!Element createInContext(id : String, Source: String, Target: String) {
+
+	var argumentElements = new Native("java.util.ArrayList");
+	var sourceList = new Native("java.util.ArrayList");
+	var targetList = new Native("java.util.ArrayList");
+	argumentElements.addAll(module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")));
+	var sourceArgElement;
+	var targetArgElement;
+	for(arg in argumentElements)
+	{
+		if(arg.eGet(arg.eClass().getEStructuralFeature("id")) == Source)
+		{
+			sourceArgElement = arg;
+		}
+		else if(arg.eGet(arg.eClass().getEStructuralFeature("id")) == Target)
+		{
+			targetArgElement = arg;
+		}
+	}
+
+	var inContext = InstantiatedGSNPattern.createInstance("GSN_InContextOf");
+	inContext.eSet(inContext.eClass().getEStructuralFeature("id"), id);
+	inContext.eSet(inContext.eClass().getEStructuralFeature("hasSource"), sourceArgElement);
+	inContext.eSet(inContext.eClass().getEStructuralFeature("hasTarget"), targetArgElement);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(inContext);
+
+	var con = new XMLDoc2!t_ArgumentElements;
+	
+	con.a_id = id;
+	con.a_hasSource = Source;
+	con.a_hasTarget = Target;
+	con.a_xsitype="gsnmetamodel:GSN_InContextOf";
+	self.appendChild(con);
+}
+
+operation XMLDoc2!Element createAwayGoal(id : String, inst : Boolean, type: String, content: String, role: String, tag: String, mod: String) {
+
+	var awayGoal = InstantiatedGSNPattern.createInstance("GSN_AwayGoal");
+	var contentsList = new Native("java.util.ArrayList");
+	var literal = InstantiatedGSNPattern.createInstance("Literal");
+	var roleBinding = InstantiatedGSNPattern.createInstance("Role");
+	roleBinding.eSet(roleBinding.eClass().getEStructuralFeature("role"), role);
+	literal.eSet(literal.eClass().getEStructuralFeature("literal"), content);
+	contentsList.add(roleBinding);
+	contentsList.add(literal);
+	
+	awayGoal.eSet(awayGoal.eClass().getEStructuralFeature("id"), id);
+	//awayGoal.eSet(awayGoal.eClass().getEStructuralFeature("modRef"), mod);
+	//awayGoal.eSet(awayGoal.eClass().getEStructuralFeature("tobeInstantiated"), inst);
+	awayGoal.eSet(awayGoal.eClass().getEStructuralFeature("contents"), contentsList);
+	module.eGet(module.eClass().getEStructuralFeature("ArgumentElements")).add(awayGoal);
+	
+	var away = new XMLDoc2!t_ArgumentElements;
+	away.a_xsitype="gsnmetamodel:GSN_AwayGoal";
+	away.a_id = id;
+	away.a_tobeInstantiated = inst;
+	away.a_modRef = mod;
+	
+	self.appendChild(away);
+	var literal = new XMLDoc2!t_contents;
+	literal.a_literal = content;
+	literal.a_xsitype ="gsnmetamodel:Literal";
+	away.appendChild(literal);
+	var roleBinding = new XMLDoc2!t_contents;
+	roleBinding.a_role = role;
+	roleBinding.a_xsitype = "gsnmetamodel:Role";
+	away.appendChild(roleBinding);
+	
+	
+	if(tag="noBind"){
+		var error = new XMLDoc2!t_contents;
+		error.a_tag =("--instantiation error: No role binding specified for role: "+role+"--");
+		away.appendChild(error);
+	}
+		
+	if(tag="noModel"){
+		var nomod = new XMLDoc2!t_contents;
+		nomod.a_tag =("--instantiation error: No model element exists to instantiate role: "+role+"--");
+		away.appendChild(nomod);
+	}
+}
+
+operation formatOutputForDiagramCreation()
+{
+	var elementsToTransform = XMLDoc2!t_ArgumentElements.all;
+	var formattedGSNML = new FormattedGSNML!t_argumentTree;
+	FormattedGSNML.root =formattedGSNML;
+	//for each node create an entry
+
+	var nodesToTransform = elementsToTransform.select(e|e.`a_xsitype` = "gsnmetamodel:GSN_Goal" or e.`a_xsitype` = "gsnmetamodel:GSN_Strategy" or e.`a_xsitype` = "gsnmetamodel:GSN_Solution" or e.`a_xsitype` = "gsnmetamodel:GSN_Assumption"or e.`a_xsitype` = "gsnmetamodel:GSN_Justification" or e.`a_xsitype` = "gsnmetamodel:GSN_ContextAsReference" or e.`a_xsitype` = "gsnmetamodel:GSN_ContextAsAssertion" or e.`a_xsitype` = "gsnmetamodel:GSN_AwayGoal");
+
+	for (n in nodesToTransform){
+		var element = new FormattedGSNML!t_node;
+		element.a_id = n.a_id;
+		element.a_parentID=getParentID(n.a_id, elementsToTransform);
+		formattedGSNML.appendChild(element);
+	}
+}
+
+operation Any getParentID(id, elementsToTransform)
+{
+	//find the ID of the parent element of the node
+	var parent;
+	var edgesToTransform = elementsToTransform.select(e|e.`a_xsitype` = "gsnmetamodel:GSN_SupportedBy" or e.`a_xsitype` = "gsnmetamodel:GSN_InContextOf");
+	//edges.println();
+	for (e in edgesToTransform)
+	{
+		if(e.a_hasTarget.equals(id))
+		{
+			parent=e.a_hasSource;
+			return parent;
+		}
+	}
+}
+

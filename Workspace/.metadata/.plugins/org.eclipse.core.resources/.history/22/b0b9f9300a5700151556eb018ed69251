@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gsnmetamodel:Case xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsnmetamodel="http://gsnmetamodel/1.0" id="Assurance Case">
+  <contains xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: System Properties">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required properties are enforced"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProps.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="sys"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required properties are enforced"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProps.0.1" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: sysProps.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Any command sent between a switch_to_high (or the beginning) and a switch_to_low event should not be visible to the low-security subject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required properties:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R999Con: sysProps.0.1" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: sysDescr.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Starlight MILS AADL model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="D-MILS System: defined by"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R999Con: sysDescr.0.1" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.5"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: sysSecurity.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each safety or security property"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: sysSecurity.1" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.7"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Ass: sysProps.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The defined required properties are complete and correct w.r.t. system threats, vulnerabilities and hazards"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseAss: sysProps.1" hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.9"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propEnforced.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Any command sent between a switch_to_high (or the beginning) and a switch_to_low event should not be visible to the low-security subject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is enforced"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propEnforced.0.1.1" hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.11"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: compVerif.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each formal property relating to"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: compVerif.1" hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: formalProps.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="formal system properties relating to D-MILS system property:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: formalProps.0.1.1" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.15"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSuff.0.1.1" undeveloped="true">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The formal properties are sufficient to address the defined D-MILS system properties"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: propSuff.1" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.17"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.19"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.19" hasTarget="//@contains.0/@ArgumentElements.21"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.1.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.1.1.2" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.23"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.1.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.1.1.2" hasSource="//@contains.0/@ArgumentElements.23" hasTarget="//@contains.0/@ArgumentElements.25"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.1.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.1.1.3" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.27"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.1.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.1.1.3" hasSource="//@contains.0/@ArgumentElements.27" hasTarget="//@contains.0/@ArgumentElements.29"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSat.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Formal properties are addressed through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: propSat.1" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.31"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: SysSecurity.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over the required properties of the components and the platform"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: SysSecurity.1" hasSource="//@contains.0/@ArgumentElements.31" hasTarget="//@contains.0/@ArgumentElements.33"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: swComponents.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Trusted software components correctly implement the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: swComponents.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.35"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: swComponents.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each trusted software component"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: swComponents.1" hasSource="//@contains.0/@ArgumentElements.35" hasTarget="//@contains.0/@ArgumentElements.37"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Usubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.37" hasTarget="//@contains.0/@ArgumentElements.39"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.1.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Dsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.1.1.2" hasSource="//@contains.0/@ArgumentElements.37" hasTarget="//@contains.0/@ArgumentElements.41"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.1.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Lsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.1.1.3" hasSource="//@contains.0/@ArgumentElements.37" hasTarget="//@contains.0/@ArgumentElements.43"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.1.1.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Hsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.1.1.4" hasSource="//@contains.0/@ArgumentElements.37" hasTarget="//@contains.0/@ArgumentElements.45"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: platProp_D-MILS PLatform.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="D-MILS platform guarantees required properties"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: platProp_D-MILS PLatform.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.47"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: envAss.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="All environmental assumptions are met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: envAss.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.49"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: envAss.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each assumed environmental property"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: envAss.1" hasSource="//@contains.0/@ArgumentElements.49" hasTarget="//@contains.0/@ArgumentElements.51"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="true"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.51" hasTarget="//@contains.0/@ArgumentElements.53"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.1.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) ))"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.1.1.2" hasSource="//@contains.0/@ArgumentElements.51" hasTarget="//@contains.0/@ArgumentElements.55"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.1.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="always (                   ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) ))                    and                 ( ( {last_data(cmd) less high_bound} ) implies ( (not {switch_to_low}) since {switch_to_high} )))"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.1.1.3" hasSource="//@contains.0/@ArgumentElements.51" hasTarget="//@contains.0/@ArgumentElements.57"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sysImp_Implementation.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The MILS-AADL model is faithfully implemented"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: sysImp_Implementation.1" hasSource="//@contains.0/@ArgumentElements.33" hasTarget="//@contains.0/@ArgumentElements.59"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProps.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="starlight"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required properties are enforced"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProps.0.2" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.61"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: sysProps.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Any command sent between a switch_to_high (or the beginning) and a switch_to_low event should not be visible to the low-security subject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="required properties:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R999Con: sysProps.0.2" hasSource="//@contains.0/@ArgumentElements.61" hasTarget="//@contains.0/@ArgumentElements.63"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: sysDescr.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Starlight MILS AADL model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="D-MILS System: defined by"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="R999Con: sysDescr.0.2" hasSource="//@contains.0/@ArgumentElements.61" hasTarget="//@contains.0/@ArgumentElements.65"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: sysSecurity.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each safety or security property"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: sysSecurity.2" hasSource="//@contains.0/@ArgumentElements.61" hasTarget="//@contains.0/@ArgumentElements.67"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Ass: sysProps.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The defined required properties are complete and correct w.r.t. system threats, vulnerabilities and hazards"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI NOT INSTANT falseAss: sysProps.2" hasSource="//@contains.0/@ArgumentElements.67" hasTarget="//@contains.0/@ArgumentElements.69"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propEnforced.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Any command sent between a switch_to_high (or the beginning) and a switch_to_low event should not be visible to the low-security subject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is enforced"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propEnforced.0.2.1" hasSource="//@contains.0/@ArgumentElements.67" hasTarget="//@contains.0/@ArgumentElements.71"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: compVerif.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each formal property relating to"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: compVerif.1" hasSource="//@contains.0/@ArgumentElements.71" hasTarget="//@contains.0/@ArgumentElements.73"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: formalProps.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="formal system properties relating to D-MILS system property:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="Con: formalProps.0.2.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.75"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSuff.0.2.1" undeveloped="true">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The formal properties are sufficient to address the defined D-MILS system properties"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: propSuff.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.77"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.79"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.79" hasTarget="//@contains.0/@ArgumentElements.81"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.2.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.2.1.2" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.83"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.2.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.2.1.2" hasSource="//@contains.0/@ArgumentElements.83" hasTarget="//@contains.0/@ArgumentElements.85"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propAdd.0.2.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propAdd.0.2.1.3" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.87"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: propSat_Composition.0.2.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: propSat_Composition.0.2.1.3" hasSource="//@contains.0/@ArgumentElements.87" hasTarget="//@contains.0/@ArgumentElements.89"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSat.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Formal properties are addressed through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: propSat.1" hasSource="//@contains.0/@ArgumentElements.73" hasTarget="//@contains.0/@ArgumentElements.91"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: SysSecurity.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over the required properties of the components and the platform"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: SysSecurity.1" hasSource="//@contains.0/@ArgumentElements.91" hasTarget="//@contains.0/@ArgumentElements.93"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: swComponents.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Trusted software components correctly implement the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: swComponents.1" hasSource="//@contains.0/@ArgumentElements.93" hasTarget="//@contains.0/@ArgumentElements.95"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: swComponents.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each trusted software component"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: swComponents.1" hasSource="//@contains.0/@ArgumentElements.95" hasTarget="//@contains.0/@ArgumentElements.97"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Usubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.97" hasTarget="//@contains.0/@ArgumentElements.99"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.2.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Dsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.2.1.2" hasSource="//@contains.0/@ArgumentElements.97" hasTarget="//@contains.0/@ArgumentElements.101"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.2.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Lsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.2.1.3" hasSource="//@contains.0/@ArgumentElements.97" hasTarget="//@contains.0/@ArgumentElements.103"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sWcompProp_Trusted Software Component.0.2.1.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Hsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="correctly implements the MILS-AADL implementation specification"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sWcompProp_Trusted Software Component.0.2.1.4" hasSource="//@contains.0/@ArgumentElements.97" hasTarget="//@contains.0/@ArgumentElements.105"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: platProp_D-MILS PLatform.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="D-MILS platform guarantees required properties"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: platProp_D-MILS PLatform.1" hasSource="//@contains.0/@ArgumentElements.93" hasTarget="//@contains.0/@ArgumentElements.107"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: envAss.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="All environmental assumptions are met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: envAss.1" hasSource="//@contains.0/@ArgumentElements.93" hasTarget="//@contains.0/@ArgumentElements.109"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: envAss.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each assumed environmental property"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseStrat: envAss.1" hasSource="//@contains.0/@ArgumentElements.109" hasTarget="//@contains.0/@ArgumentElements.111"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.2.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="true"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.2.1.1" hasSource="//@contains.0/@ArgumentElements.111" hasTarget="//@contains.0/@ArgumentElements.113"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.2.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) ))"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.2.1.2" hasSource="//@contains.0/@ArgumentElements.111" hasTarget="//@contains.0/@ArgumentElements.115"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: sysProp.0.2.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="always (                   ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) ))                    and                 ( ( {last_data(cmd) less high_bound} ) implies ( (not {switch_to_low}) since {switch_to_high} )))"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: sysProp.0.2.1.3" hasSource="//@contains.0/@ArgumentElements.111" hasTarget="//@contains.0/@ArgumentElements.117"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: sysImp_Implementation.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="The MILS-AADL model is faithfully implemented"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: sysImp_Implementation.1" hasSource="//@contains.0/@ArgumentElements.93" hasTarget="//@contains.0/@ArgumentElements.119"/>
+  </contains>
+</gsnmetamodel:Case>

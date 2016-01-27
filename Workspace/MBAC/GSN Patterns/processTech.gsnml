@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="processTech" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: techniqueTrust" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: techAppro" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is appropriate for activity" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: techniqueTrust" target="Goal: techAppro" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: techProv" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="has necessary provenance" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: techniqueTrust" target="Goal: techProv" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: provenance" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="provenance" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5" source="Goal: techProv" target="Sol: provenance" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

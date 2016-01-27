@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="processArtefact" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: artTrust" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="artefact" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: artefact evaluations" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="evaluations of artefact demonstrate correctness" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: artTrust" target="Goal: artefact evaluations" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: artefactConf" toBeSupported="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="Set of evaluations performed provide sufficient confidence in the artefact" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: artTrust" target="Goal: artefactConf" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Strat: prodArtTrust" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over each evaluation" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.5" source="Goal: artefact evaluations" target="Strat: prodArtTrust" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: evalArt" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="evaluation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="demonstrates correctness of artefact" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7" multiplicity="evaluation" source="Strat: prodArtTrust" target="Goal: evalArt" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

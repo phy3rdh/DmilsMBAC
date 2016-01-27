@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="systemProps5" xsi:type="gsnmetamodel:GSN_Module">
+  <ArgumentElements id="Goal: sWcompProp_Trusted Software Component" modRef="Trusted Software Component" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_AwayGoal">
+      <contents role="trusted software component" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="correctly implements the MILS-AADL implementation specification" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>  </contains>
+</gsnmetamodel:Case>

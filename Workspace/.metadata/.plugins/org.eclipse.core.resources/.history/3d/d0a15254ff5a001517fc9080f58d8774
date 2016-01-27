@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<table>
+  <entry id="Goal: activityTrust" object="OCRA Contract Checking" role="activity"/>
+  <entry id="Goal: activityParts" object="OCRA Contract Checking" role="activity"/>
+  <entry id="Goal: tool.0.1" object="OCRA tool" role="[tool]"/>
+  <entry id="Goal: toolAppro.0.1" object="OCRA tool" role="tool"/>
+  <entry id="Goal: toolProv.0.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: provenance.0.1" object="No mapping for role found in weaving model" role="required integrity"/>
+  <entry id="Goal: toolQualify.0.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: integrity.0.1" object="High" role="tool integrity"/>
+  <entry id="Goal: objectives.0.1" object="OCRA tool" role="tool"/>
+  <entry id="Goal: evalTool.0.1.1" object="OCRA tool testing" role="[evaluation]"/>
+  <entry id="Goal: evalRes.0.1.1" object="OCRA tool testing" role="evaluation"/>
+  <entry id="Con: criterion.0.1.1" object="Tool will not incorrectly report a positive result" role="criterion"/>
+  <entry id="Just: rationale.0.1.1" object="" role="rationale"/>
+  <entry id="Goal: evalAppropriate.0.1.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: artefactVersion.0.1.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.1.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: tool.0.2" object="Compass Tool" role="[tool]"/>
+  <entry id="Goal: toolAppro.0.2" object="Compass Tool" role="tool"/>
+  <entry id="Goal: toolProv.0.2" object="Compass Tool" role="tool"/>
+  <entry id="Con: provenance.0.2" object="No mapping for role found in weaving model" role="required integrity"/>
+  <entry id="Goal: toolQualify.0.2" object="Compass Tool" role="tool"/>
+  <entry id="Con: integrity.0.2" object="High" role="tool integrity"/>
+  <entry id="Goal: objectives.0.2" object="Compass Tool" role="tool"/>
+  <entry id="Goal: evalTool.0.2.1" object="Compass tool testing" role="[evaluation]"/>
+  <entry id="Goal: evalRes.0.2.1" object="Compass tool testing" role="evaluation"/>
+  <entry id="Con: criterion.0.2.1" object="Tool output is semantically equivalent to input" role="criterion"/>
+  <entry id="Just: rationale.0.2.1" object="" role="rationale"/>
+  <entry id="Goal: evalAppropriate.0.2.1" object="Compass Tool" role="tool"/>
+  <entry id="Con: artefactVersion.0.2.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.2.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: activityReqs" object="OCRA Contract Checking" role="activity"/>
+  <entry id="Goal: artTrust.0.1" object="MILS-AADL model" role="[artefact]"/>
+  <entry id="Goal: artTrust.0.2" object="OCRA contract specification" role="[artefact]"/>
+  <entry id="Goal: evalArt.0.2.1" object="OCRA spec consistency check" role="[evaluation]"/>
+  <entry id="Goal: artefact evalRes.0.2.1" object="OCRA spec consistency check" role="evaluation"/>
+  <entry id="Con: criterion.0.2.1" object="OCRA specification is consistent" role="criterion"/>
+  <entry id="Just: rationale.0.2.1" object="" role="rationale"/>
+  <entry id="Goal: artefact evalAppropriate.0.2.1" object="OCRA contract specification" role="artefact"/>
+  <entry id="Con: artefactVersion.0.2.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.2.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: activityTech" object="OCRA Contract Checking" role="activity"/>
+  <entry id="Goal: techniqueTrust.0.1" object="OCRA" role="[technique]"/>
+  <entry id="Goal: techAppro.0.1" object="OCRA" role="technique"/>
+  <entry id="Goal: techProv.0.1" object="OCRA" role="technique"/>
+  <entry id="Goal: subActivities" object="OCRA Contract Checking" role="activity"/>
+  <entry id="Goal: subActivit.0.1" object="Translation MILS-AADL to OCRA" role="[subActivity]"/>
+  <entry id="Goal: activityParts.0.1" object="Translation MILS-AADL to OCRA" role="subActivity"/>
+  <entry id="Goal: tool.0.1.1" object="Compass Tool" role="[tool]"/>
+  <entry id="Goal: toolAppro.0.1.1" object="Compass Tool" role="tool"/>
+  <entry id="Goal: toolProv.0.1.1" object="Compass Tool" role="tool"/>
+  <entry id="Con: provenance.0.1.1" object="No mapping for role found in weaving model" role="required integrity"/>
+  <entry id="Goal: toolQualify.0.1.1" object="Compass Tool" role="tool"/>
+  <entry id="Con: integrity.0.1.1" object="High" role="tool integrity"/>
+  <entry id="Goal: objectives.0.1.1" object="Compass Tool" role="tool"/>
+  <entry id="Goal: evalTool.0.1.1.1" object="Compass tool testing" role="[evaluation]"/>
+  <entry id="Goal: evalRes.0.1.1.1" object="Compass tool testing" role="evaluation"/>
+  <entry id="Con: criterion.0.1.1.1" object="Tool output is semantically equivalent to input" role="criterion"/>
+  <entry id="Just: rationale.0.1.1.1" object="" role="rationale"/>
+  <entry id="Goal: evalAppropriate.0.1.1.1" object="Compass Tool" role="tool"/>
+  <entry id="Con: artefactVersion.0.1.1.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.1.1.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: activityReqs.0.1" object="Translation MILS-AADL to OCRA" role="subActivity"/>
+  <entry id="Goal: artTrust.0.1.1" object="OCRA contract specification" role="[artefact]"/>
+  <entry id="Goal: evalArt.0.1.1.1" object="OCRA spec consistency check" role="[evaluation]"/>
+  <entry id="Goal: artefact evalRes.0.1.1.1" object="OCRA spec consistency check" role="evaluation"/>
+  <entry id="Con: criterion.0.1.1.1" object="OCRA specification is consistent" role="criterion"/>
+  <entry id="Just: rationale.0.1.1.1" object="" role="rationale"/>
+  <entry id="Goal: artefact evalAppropriate.0.1.1.1" object="OCRA contract specification" role="artefact"/>
+  <entry id="Con: artefactVersion.0.1.1.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.1.1.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: activityTech.0.1" object="Translation MILS-AADL to OCRA" role="subActivity"/>
+  <entry id="Goal: subActivit.0.2" object="OCRA refinement check" role="[subActivity]"/>
+  <entry id="Goal: activityParts.0.2" object="OCRA refinement check" role="subActivity"/>
+  <entry id="Goal: tool.0.2.1" object="OCRA tool" role="[tool]"/>
+  <entry id="Goal: toolAppro.0.2.1" object="OCRA tool" role="tool"/>
+  <entry id="Goal: toolProv.0.2.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: provenance.0.2.1" object="No mapping for role found in weaving model" role="required integrity"/>
+  <entry id="Goal: toolQualify.0.2.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: integrity.0.2.1" object="High" role="tool integrity"/>
+  <entry id="Goal: objectives.0.2.1" object="OCRA tool" role="tool"/>
+  <entry id="Goal: evalTool.0.2.1.1" object="OCRA tool testing" role="[evaluation]"/>
+  <entry id="Goal: evalRes.0.2.1.1" object="OCRA tool testing" role="evaluation"/>
+  <entry id="Con: criterion.0.2.1.1" object="Tool will not incorrectly report a positive result" role="criterion"/>
+  <entry id="Just: rationale.0.2.1.1" object="" role="rationale"/>
+  <entry id="Goal: evalAppropriate.0.2.1.1" object="OCRA tool" role="tool"/>
+  <entry id="Con: artefactVersion.0.2.1.1" object="2" role="version"/>
+  <entry id="Con: artefactDate.0.2.1.1" object="Wed Sep 09 00:00:00 BST 2015" role="date"/>
+  <entry id="Goal: activityReqs.0.2" object="OCRA refinement check" role="subActivity"/>
+  <entry id="Goal: activityTech.0.2" object="OCRA refinement check" role="subActivity"/>
+  <entry id="Goal: techniqueTrust.0.2.1" object="OCRA" role="[technique]"/>
+  <entry id="Goal: techAppro.0.2.1" object="OCRA" role="technique"/>
+  <entry id="Goal: techProv.0.2.1" object="OCRA" role="technique"/>
+</table>

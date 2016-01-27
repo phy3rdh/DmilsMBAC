@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<argumentTree>
+  <node id="Goal: activityTrust" parentID="null"/>
+  <node id="Strat: activityTrust" parentID="Goal: activityTrust"/>
+  <node id="Goal: activityParts" parentID="Strat: activityTrust"/>
+  <node id="Goal: tool.0.1" parentID="Goal: activityParts"/>
+  <node id="Goal: toolAppro.0.1" parentID="Goal: tool.0.1"/>
+  <node id="Goal: toolProv.0.1" parentID="Goal: tool.0.1"/>
+  <node id="Con: provenance.0.1" parentID="Goal: toolProv.0.1"/>
+  <node id="Goal: toolQualify.0.1" parentID="Goal: toolProv.0.1"/>
+  <node id="Con: integrity.0.1" parentID="Goal: toolQualify.0.1"/>
+  <node id="Goal: objectives.0.1" parentID="Goal: toolProv.0.1"/>
+  <node id="Goal: evaluations.0.1" parentID="Goal: objectives.0.1"/>
+  <node id="Strat: evaluations.0.1" parentID="Goal: evaluations.0.1"/>
+  <node id="Goal: evalTool.0.1.1" parentID="Strat: evaluations.0.1"/>
+  <node id="Goal: evalRes.0.1.1" parentID="Goal: evalTool.0.1.1"/>
+  <node id="Sol: evalRes.0.1.1" parentID="Goal: evalRes.0.1.1"/>
+  <node id="Con: criterion.0.1.1" parentID="Goal: evalRes.0.1.1"/>
+  <node id="Just: rationale.0.1.1" parentID="Goal: evalRes.0.1.1"/>
+  <node id="Goal: evalAppropriate.0.1.1" parentID="Goal: evalTool.0.1.1"/>
+  <node id="Con: artefactVersion.0.1.1" parentID="Goal: evalAppropriate.0.1.1"/>
+  <node id="Con: artefactDate.0.1.1" parentID="Goal: evalAppropriate.0.1.1"/>
+  <node id="Goal: toolDev.0.1" parentID="Goal: objectives.0.1"/>
+  <node id="Strat: toolDev.0.1" parentID="Goal: toolDev.0.1"/>
+  <node id="Con: activities.0.1" parentID="Strat: toolDev.0.1"/>
+  <node id="Goal: tool.0.2" parentID="Goal: activityParts"/>
+  <node id="Goal: toolAppro.0.2" parentID="Goal: tool.0.2"/>
+  <node id="Goal: toolProv.0.2" parentID="Goal: tool.0.2"/>
+  <node id="Con: provenance.0.2" parentID="Goal: toolProv.0.2"/>
+  <node id="Goal: toolQualify.0.2" parentID="Goal: toolProv.0.2"/>
+  <node id="Con: integrity.0.2" parentID="Goal: toolQualify.0.2"/>
+  <node id="Goal: objectives.0.2" parentID="Goal: toolProv.0.2"/>
+  <node id="Goal: evaluations.0.2" parentID="Goal: objectives.0.2"/>
+  <node id="Strat: evaluations.0.2" parentID="Goal: evaluations.0.2"/>
+  <node id="Goal: evalTool.0.2.1" parentID="Strat: evaluations.0.2"/>
+  <node id="Goal: evalRes.0.2.1" parentID="Goal: evalTool.0.2.1"/>
+  <node id="Sol: evalRes.0.2.1" parentID="Goal: evalRes.0.2.1"/>
+  <node id="Con: criterion.0.2.1" parentID="Goal: evalRes.0.2.1"/>
+  <node id="Just: rationale.0.2.1" parentID="Goal: evalRes.0.2.1"/>
+  <node id="Goal: evalAppropriate.0.2.1" parentID="Goal: evalTool.0.2.1"/>
+  <node id="Con: artefactVersion.0.2.1" parentID="Goal: evalAppropriate.0.2.1"/>
+  <node id="Con: artefactDate.0.2.1" parentID="Goal: evalAppropriate.0.2.1"/>
+  <node id="Goal: toolDev.0.2" parentID="Goal: objectives.0.2"/>
+  <node id="Strat: toolDev.0.2" parentID="Goal: toolDev.0.2"/>
+  <node id="Con: activities.0.2" parentID="Strat: toolDev.0.2"/>
+  <node id="Goal: activityReqs" parentID="Strat: activityTrust"/>
+  <node id="Goal: artTrust.0.1" parentID="Goal: activityReqs"/>
+  <node id="Goal: artefact evaluations.0.1" parentID="Goal: artTrust.0.1"/>
+  <node id="Goal: artefactConf.0.1" parentID="Goal: artTrust.0.1"/>
+  <node id="Strat: prodArtTrust.0.1" parentID="Goal: artefact evaluations.0.1"/>
+  <node id="Goal: artTrust.0.2" parentID="Goal: activityReqs"/>
+  <node id="Goal: artefact evaluations.0.2" parentID="Goal: artTrust.0.2"/>
+  <node id="Goal: artefactConf.0.2" parentID="Goal: artTrust.0.2"/>
+  <node id="Strat: prodArtTrust.0.2" parentID="Goal: artefact evaluations.0.2"/>
+  <node id="Goal: evalArt.0.2.1" parentID="Strat: prodArtTrust.0.2"/>
+  <node id="Goal: artefact evalRes.0.2.1" parentID="Goal: evalArt.0.2.1"/>
+  <node id="Con: criterion.0.2.1" parentID="Goal: evalRes.0.2.1"/>
+  <node id="Just: rationale.0.2.1" parentID="Goal: evalRes.0.2.1"/>
+  <node id="Sol: artefact evalRes.0.2.1" parentID="Goal: artefact evalRes.0.2.1"/>
+  <node id="Goal: artefact evalAppropriate.0.2.1" parentID="Goal: evalArt.0.2.1"/>
+  <node id="Con: artefactVersion.0.2.1" parentID="Goal: evalAppropriate.0.2.1"/>
+  <node id="Con: artefactDate.0.2.1" parentID="Goal: evalAppropriate.0.2.1"/>
+  <node id="Goal: activityTech" parentID="Strat: activityTrust"/>
+  <node id="Goal: techniqueTrust.0.1" parentID="Goal: activityTech"/>
+  <node id="Goal: techAppro.0.1" parentID="Goal: techniqueTrust.0.1"/>
+  <node id="Goal: techProv.0.1" parentID="Goal: techniqueTrust.0.1"/>
+  <node id="Sol: provenance.0.1" parentID="Goal: techProv.0.1"/>
+  <node id="Goal: subActivities" parentID="Strat: activityTrust"/>
+  <node id="Goal: subActivit.0.1" parentID="Goal: subActivities"/>
+  <node id="Strat: activityTrust.0.1" parentID="Goal: subActivit.0.1"/>
+  <node id="Goal: activityParts.0.1" parentID="Strat: activityTrust.0.1"/>
+  <node id="Goal: tool.0.1.1" parentID="Goal: activityParts.0.1"/>
+  <node id="Goal: toolAppro.0.1.1" parentID="Goal: tool.0.1.1"/>
+  <node id="Goal: toolProv.0.1.1" parentID="Goal: tool.0.1.1"/>
+  <node id="Con: provenance.0.1.1" parentID="Goal: toolProv.0.1.1"/>
+  <node id="Goal: toolQualify.0.1.1" parentID="Goal: toolProv.0.1.1"/>
+  <node id="Con: integrity.0.1.1" parentID="Goal: toolQualify.0.1.1"/>
+  <node id="Goal: objectives.0.1.1" parentID="Goal: toolProv.0.1.1"/>
+  <node id="Goal: evaluations.0.1.1" parentID="Goal: objectives.0.1.1"/>
+  <node id="Strat: evaluations.0.1.1" parentID="Goal: evaluations.0.1.1"/>
+  <node id="Goal: evalTool.0.1.1.1" parentID="Strat: evaluations.0.1.1"/>
+  <node id="Goal: evalRes.0.1.1.1" parentID="Goal: evalTool.0.1.1.1"/>
+  <node id="Sol: evalRes.0.1.1.1" parentID="Goal: evalRes.0.1.1.1"/>
+  <node id="Con: criterion.0.1.1.1" parentID="Goal: evalRes.0.1.1.1"/>
+  <node id="Just: rationale.0.1.1.1" parentID="Goal: evalRes.0.1.1.1"/>
+  <node id="Goal: evalAppropriate.0.1.1.1" parentID="Goal: evalTool.0.1.1.1"/>
+  <node id="Con: artefactVersion.0.1.1.1" parentID="Goal: evalAppropriate.0.1.1.1"/>
+  <node id="Con: artefactDate.0.1.1.1" parentID="Goal: evalAppropriate.0.1.1.1"/>
+  <node id="Goal: toolDev.0.1.1" parentID="Goal: objectives.0.1.1"/>
+  <node id="Strat: toolDev.0.1.1" parentID="Goal: toolDev.0.1.1"/>
+  <node id="Con: activities.0.1.1" parentID="Strat: toolDev.0.1.1"/>
+  <node id="Goal: activityReqs.0.1" parentID="Strat: activityTrust.0.1"/>
+  <node id="Goal: artTrust.0.1.1" parentID="Goal: activityReqs.0.1"/>
+  <node id="Goal: artefact evaluations.0.1.1" parentID="Goal: artTrust.0.1.1"/>
+  <node id="Goal: artefactConf.0.1.1" parentID="Goal: artTrust.0.1.1"/>
+  <node id="Strat: prodArtTrust.0.1.1" parentID="Goal: artefact evaluations.0.1.1"/>
+  <node id="Goal: evalArt.0.1.1.1" parentID="Strat: prodArtTrust.0.1.1"/>
+  <node id="Goal: artefact evalRes.0.1.1.1" parentID="Goal: evalArt.0.1.1.1"/>
+  <node id="Con: criterion.0.1.1.1" parentID="Goal: evalRes.0.1.1.1"/>
+  <node id="Just: rationale.0.1.1.1" parentID="Goal: evalRes.0.1.1.1"/>
+  <node id="Sol: artefact evalRes.0.1.1.1" parentID="Goal: artefact evalRes.0.1.1.1"/>
+  <node id="Goal: artefact evalAppropriate.0.1.1.1" parentID="Goal: evalArt.0.1.1.1"/>
+  <node id="Con: artefactVersion.0.1.1.1" parentID="Goal: evalAppropriate.0.1.1.1"/>
+  <node id="Con: artefactDate.0.1.1.1" parentID="Goal: evalAppropriate.0.1.1.1"/>
+  <node id="Goal: activityTech.0.1" parentID="Strat: activityTrust.0.1"/>
+  <node id="Goal: subActivit.0.2" parentID="Goal: subActivities"/>
+  <node id="Strat: activityTrust.0.2" parentID="Goal: subActivit.0.2"/>
+  <node id="Goal: activityParts.0.2" parentID="Strat: activityTrust.0.2"/>
+  <node id="Goal: tool.0.2.1" parentID="Goal: activityParts.0.2"/>
+  <node id="Goal: toolAppro.0.2.1" parentID="Goal: tool.0.2.1"/>
+  <node id="Goal: toolProv.0.2.1" parentID="Goal: tool.0.2.1"/>
+  <node id="Con: provenance.0.2.1" parentID="Goal: toolProv.0.2.1"/>
+  <node id="Goal: toolQualify.0.2.1" parentID="Goal: toolProv.0.2.1"/>
+  <node id="Con: integrity.0.2.1" parentID="Goal: toolQualify.0.2.1"/>
+  <node id="Goal: objectives.0.2.1" parentID="Goal: toolProv.0.2.1"/>
+  <node id="Goal: evaluations.0.2.1" parentID="Goal: objectives.0.2.1"/>
+  <node id="Strat: evaluations.0.2.1" parentID="Goal: evaluations.0.2.1"/>
+  <node id="Goal: evalTool.0.2.1.1" parentID="Strat: evaluations.0.2.1"/>
+  <node id="Goal: evalRes.0.2.1.1" parentID="Goal: evalTool.0.2.1.1"/>
+  <node id="Sol: evalRes.0.2.1.1" parentID="Goal: evalRes.0.2.1.1"/>
+  <node id="Con: criterion.0.2.1.1" parentID="Goal: evalRes.0.2.1.1"/>
+  <node id="Just: rationale.0.2.1.1" parentID="Goal: evalRes.0.2.1.1"/>
+  <node id="Goal: evalAppropriate.0.2.1.1" parentID="Goal: evalTool.0.2.1.1"/>
+  <node id="Con: artefactVersion.0.2.1.1" parentID="Goal: evalAppropriate.0.2.1.1"/>
+  <node id="Con: artefactDate.0.2.1.1" parentID="Goal: evalAppropriate.0.2.1.1"/>
+  <node id="Goal: toolDev.0.2.1" parentID="Goal: objectives.0.2.1"/>
+  <node id="Strat: toolDev.0.2.1" parentID="Goal: toolDev.0.2.1"/>
+  <node id="Con: activities.0.2.1" parentID="Strat: toolDev.0.2.1"/>
+  <node id="Goal: activityReqs.0.2" parentID="Strat: activityTrust.0.2"/>
+  <node id="Goal: activityTech.0.2" parentID="Strat: activityTrust.0.2"/>
+  <node id="Goal: techniqueTrust.0.2.1" parentID="Goal: activityTech.0.2"/>
+  <node id="Goal: techAppro.0.2.1" parentID="Goal: techniqueTrust.0.2.1"/>
+  <node id="Goal: techProv.0.2.1" parentID="Goal: techniqueTrust.0.2.1"/>
+  <node id="Sol: provenance.0.2.1" parentID="Goal: techProv.0.2.1"/>
+</argumentTree>

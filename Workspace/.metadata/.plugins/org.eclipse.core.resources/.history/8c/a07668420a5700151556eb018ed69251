@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gsnmetamodel:Case xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsnmetamodel="http://gsnmetamodel/1.0" id="Assurance Case">
+  <contains xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalProps">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="All formal properties are satisfied through the realisation of the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSat.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propSat.0.1" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalVerif.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Formal verification proves that the MILS-AADL model satisfies"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: formalVerif.0.1" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verifResults.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {cmd} implies in the future {return}"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Results of formal verification demonstrate"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: verifResults.0.1" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: verifResults.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: verifResults.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Usubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.1.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.9"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Dsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.1.2" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.11"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Lsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.1.3" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.13"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.1.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Hsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.1.4" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.15"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: platformProps.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="No meta dep target because no role mapping in weaving model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="properties of D-MILS platform:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: platformProps.0.1.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.17"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalConf.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="There is sufficient confidence in the formal verification results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: formalConf.1" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.19"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verification.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="ocra"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="gives trustworthy results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R999Goal: verification.0.1" hasSource="//@contains.0/@ArgumentElements.19" hasTarget="//@contains.0/@ArgumentElements.21"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: activityTrust_Process.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="process is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: activityTrust_Process.1" hasSource="//@contains.0/@ArgumentElements.21" hasTarget="//@contains.0/@ArgumentElements.23"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSat.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propSat.0.2" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.25"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalVerif.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Formal verification proves that the MILS-AADL model satisfies"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: formalVerif.0.2" hasSource="//@contains.0/@ArgumentElements.25" hasTarget="//@contains.0/@ArgumentElements.27"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verifResults.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Results of formal verification demonstrate"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: verifResults.0.2" hasSource="//@contains.0/@ArgumentElements.27" hasTarget="//@contains.0/@ArgumentElements.29"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: verifResults.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: verifResults.2" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.31"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Usubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.2.1" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.33"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.2.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Dsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.2.2" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.35"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.2.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Lsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.2.3" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.37"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.2.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Hsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.2.4" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.39"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: platformProps.0.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="No meta dep target because no role mapping in weaving model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="properties of D-MILS platform:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: platformProps.0.2.1" hasSource="//@contains.0/@ArgumentElements.29" hasTarget="//@contains.0/@ArgumentElements.41"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalConf.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="There is sufficient confidence in the formal verification results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: formalConf.2" hasSource="//@contains.0/@ArgumentElements.27" hasTarget="//@contains.0/@ArgumentElements.43"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verification.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role="ocra"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="gives trustworthy results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R999Goal: verification.0.2" hasSource="//@contains.0/@ArgumentElements.43" hasTarget="//@contains.0/@ArgumentElements.45"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: activityTrust_Process.0.2">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="process is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: activityTrust_Process.2" hasSource="//@contains.0/@ArgumentElements.45" hasTarget="//@contains.0/@ArgumentElements.47"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: propSat.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is satisfied in the MILS-AADL system model"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: propSat.0.3" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.49"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalVerif.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Formal verification proves that the MILS-AADL model satisfies"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R21Goal: formalVerif.0.3" hasSource="//@contains.0/@ArgumentElements.49" hasTarget="//@contains.0/@ArgumentElements.51"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verifResults.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role="any"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Results of formal verification demonstrate"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R22Goal: verifResults.0.3" hasSource="//@contains.0/@ArgumentElements.51" hasTarget="//@contains.0/@ArgumentElements.53"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Solution" id="Sol: verifResults.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseSol: verifResults.3" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.55"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.3.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Usubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.3.1" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.57"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.3.2">
+      <contents xsi:type="gsnmetamodel:Role" role="Dsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.3.2" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.59"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.3.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Lsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.3.3" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.61"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: components.0.3.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Hsubject"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="trusted software components:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: components.0.3.4" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.63"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: platformProps.0.3.1">
+      <contents xsi:type="gsnmetamodel:Role" role="No meta dep target because no role mapping in weaving model"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="properties of D-MILS platform:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="MULTI EDGE no count Con: platformProps.0.3.1" hasSource="//@contains.0/@ArgumentElements.53" hasTarget="//@contains.0/@ArgumentElements.65"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: formalConf.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="There is sufficient confidence in the formal verification results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: formalConf.3" hasSource="//@contains.0/@ArgumentElements.51" hasTarget="//@contains.0/@ArgumentElements.67"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: verification.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role="ocra"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="gives trustworthy results"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="R999Goal: verification.0.3" hasSource="//@contains.0/@ArgumentElements.67" hasTarget="//@contains.0/@ArgumentElements.69"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_AwayGoal" id="Goal: activityTrust_Process.0.3">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="process is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT falseGoal: activityTrust_Process.3" hasSource="//@contains.0/@ArgumentElements.69" hasTarget="//@contains.0/@ArgumentElements.71"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: enviroProps">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="assumed environmental properties:"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" id="RCon: enviroProps" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.73"/>
+  </contains>
+</gsnmetamodel:Case>

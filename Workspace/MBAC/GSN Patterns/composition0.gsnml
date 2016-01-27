@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="composition0" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: formalProps" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="All formal properties are satisfied through the realisation of the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: propSat" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="is satisfied in the MILS-AADL system model" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="formal property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" multiplicity="formal property" source="Goal: formalProps" target="Goal: propSat" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Con: enviroProps" xsi:type="gsnmetamodel:GSN_ContextAsAssertion">
+      <contents literal="assumed environmental properties:" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="assumed environmental property" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3" source="Goal: formalProps" target="Con: enviroProps" xsi:type="gsnmetamodel:GSN_InContextOf"/>
+  </contains>
+</gsnmetamodel:Case>

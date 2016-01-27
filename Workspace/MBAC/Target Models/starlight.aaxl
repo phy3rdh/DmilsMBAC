@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<core:AadlSpec xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:core="http:///AADL/core" xmlns:property="http:///AADL/property" name="starlight">
+   
+   <propertySet>
+     <comment>------------------------------------------------------------------ </comment>
+		<comment>-- MILS-AADL Model of Starlight Switch [CM12]</comment>
+		<comment>------------------------------------------------------------------</comment>
+
+		<comment>-- Property to ensure: </comment>
+		<comment>--         any command sent between a switch_to_high (or the beginning) </comment>
+		<comment>--         and a switch_to_low event should not be visible to the </comment>
+		<comment>--         low-security subject.</comment>
+            
+		<comment>-----------------------------------------------------------------------------</comment>
+		<comment>-- Overall system</comment>
+		<comment>-----------------------------------------------------------------------------</comment>
+   
+    <propertyConstant name="computation">
+      <constantValue xsi:type="property:IntegerValue"/>
+    </propertyConstant>
+    <propertyConstant name="high_bound">
+      <constantValue xsi:type="property:IntegerValue"/>
+    </propertyConstant>
+  </propertySet>
+
+  <aadlPackage>
+    <aadlPublic>
+       
+  <systemType name="sys" implementations="//@aadlPackage.0/@aadlPublic/@systemImpl.0"/>
+  
+  <systemImpl name="sys.impl" compType="//@aadlPackage.0/@aadlPublic/@systemType.0">
+    <subcomponents>
+      <systemSubcomponent name="starlight" classifier="//@aadlPackage.0/@aadlPublic/@systemType.1"/>
+      <subjectSubcomponent name="user" classifier="//@aadlPackage.0/@aadlPublic/@subjectType.0"/>
+    </subcomponents>
+    <connections>
+    <dataConnection name="cmd2star"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@dataPort.0"
+          dst="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@dataPort.0">
+    </dataConnection>
+    <eventConnection name="switch2high"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@eventPort.0"
+          dst="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@eventPort.0">
+    </eventConnection>
+    <eventConnection name="switch2low"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@eventPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@eventPort.1">
+    </eventConnection>
+    <dataConnection name="display2user"
+          src="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@dataPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@dataPort.1">
+    </dataConnection>
+    </connections>
+    
+    
+  </systemImpl>
+    
+  <systemType name="starlight" implementations="//@aadlPackage.0/@aadlPublic/@systemImpl.1">
+    <features>
+      <dataPort name="cmd" direction="in"/>
+      <eventPort name="switch_to_high" direction="in"/>
+      <eventPort name="switch_to_low" direction="in"/>
+      <dataPort name="return" direction="out"/>
+      <dataPort name="outL" />
+    </features>
+    
+    <annotations>
+    <contract name="ev_functional_prop" > 
+     <technique name="ocra" />
+     <assumption name="true" /> 
+	 <guarantee name="always ( {cmd} implies in the future {return}" />
+	</contract>
+	
+    <contract name="data_functional_prop" >
+	 <technique name="ocra" />
+	 <assumption name="always ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) ))" />
+	 <guarantee name="always ( {return} implies {last_data(return) = computation(last_data(cmd))} )" />
+	</contract>
+	
+     <contract name="secure_prop" >
+     <technique name="ocra" />
+     <assumption name="always (
+                  ( {cmd} implies then ( {return} releases (not ( {cmd or switch_to_high or switch_to_low} )) )) 
+                  and 
+    	          ( ( {last_data(cmd) less high_bound} ) implies ( (not {switch_to_low}) since {switch_to_high} )))" />
+	 <guarantee name="any" value="always ({outL greater high_bound})" />
+	 </contract>
+    </annotations>        
+  </systemType>
+  
+  <systemImpl name="starlight.impl" compType="//@aadlPackage.0/@aadlPublic/@systemType.1">
+  	<subcomponents>
+      <subjectSubcomponent name="dispatch" classifier="//@aadlPackage.0/@aadlPublic/@subjectType.1"/>
+      <subjectSubcomponent name="high" classifier="//@aadlPackage.0/@aadlPublic/@subjectType.2"/>
+      <subjectSubcomponent name="low" classifier="//@aadlPackage.0/@aadlPublic/@subjectType.3"/>
+	</subcomponents>
+		
+	<connections>
+	  <dataConnection name="cmd2dispatch"
+          src="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@dataPort.0"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@dataPort.0"/>
+      <eventConnection name="s_high2dispatch"
+          src="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@eventPort.0"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@eventPort.0"/>
+      <eventConnection name="s_low2dispatch"
+          src="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@eventPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@eventPort.1"/>
+      <dataConnection name="return2starlight"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@dataPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@dataPort.1"/>
+      <dataConnection name="cmd2low"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@dataPort.3"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.2/@features/@dataPort.0"/>
+      <dataConnection name="cmd2high"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@dataPort.2"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.3/@features/@dataPort.0"/>
+      <dataConnection name="low_res2high" 
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.2/@features/@dataPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.3/@features/@dataPort.0"/>
+      <dataConnection name="high_res2dispatch"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.3/@features/@dataPort.1"
+          dst="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@dataPort.4"/>
+      <dataConnection name="low2star"
+          src="//@aadlPackage.0/@aadlPublic/@subjectType.2/@features/@dataPort.2"
+          dst="//@aadlPackage.0/@aadlPublic/@systemType.1/@features/@dataPort.2"/>
+	</connections>
+    
+    <annotations>
+    <contract name="ev_functional_prop REFINEDBY  low.fw, high.fw, high.fw_resL, dispatch.cmd_fw, dispatch.res_fw" />
+	<contract name="data_functional_prop REFINEDBY  low.data_fw, high.data, dispatch.res_data_fw, dispatch.cmd_data_fw" />
+	<contract name="secure_prop REFINEDBY  low.send_data_out, dispatch.cmd_data_fw, dispatch.cmd_fw" />
+	</annotations>
+  </systemImpl>
+ 
+ 
+   <subjectType name="Usubject" implementations="//@aadlPackage.0/@aadlPublic/@subjectImpl.0">
+		<features>
+		<eventPort name="switch_to_high" direction="out"/>
+		<eventPort name="switch_to_low" direction="out"/>
+		<dataPort name="cmd" direction="out"/>
+		<dataPort name="return" direction="in"/>
+		</features>
+		
+	</subjectType>
+	
+	<subjectImpl name="Usubject.impl" compType="//@aadlPackage.0/@aadlPublic/@subjectType.0">
+		<subcomponents>
+		<dataSubcomponent name="r" />
+		</subcomponents>
+		
+    <modes>
+      <mode name="Default" state="INITIAL"/>
+
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@eventPort.0" />
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@eventPort.1" />
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@dataPort.0"/>
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.0/@modes/@mode.0"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.0/@features/@dataPort.0"/>
+    </modes>
+		
+	</subjectImpl>
+ 
+  
+  <subjectType name="Dsubject">
+		<features>
+		<eventPort name="switch_to_high" direction="in"/>
+		<eventPort name="switch_to_low" direction="in"/>
+		<dataPort name="input" direction="in"/>
+		<dataPort name="return" direction="out"/>
+		<dataPort name="cmdH" direction="out"/>
+		<dataPort name="cmdL" direction="out"/>
+		<dataPort name="resH" direction="in"/>
+		</features>
+    
+    <annotations>
+    <contract name="cmd_fw" >
+    <technique name="ocra" />
+	<assumption name="true" />
+	<guarantee name="always (
+		       ( (((not {switch_to_high}) since {switch_to_low}) and {input}) implies ((not {cmdH}) until {cmdL}))  
+		       and 
+		       ( ((((not {switch_to_low}) since {switch_to_high}) or (historically (not {switch_to_low}))) and {input}) implies ((not {cmdL}) until {cmdH} ))
+		       )" />
+	</contract>
+
+    <contract name="cmd_data_fw" >
+    <technique name="ocra" />
+	<assumption name="any" value="always ( {input} implies then ( {return} releases (not ( {input or switch_to_high or switch_to_low} )) ))" />
+    <guarantee name="always (
+	               ( {cmdL} implies {last_data(cmdL) = last_data(input)} )
+		       and
+		       ( {cmdH} implies {last_data(cmdH) = last_data(input)} )
+		       and
+		       ( ({cmdH or cmdL}) implies (Y ((not ({cmdH or cmdL})) since {input} )))
+		       )" />
+	</contract>
+	
+    <contract name="res_fw" >
+    <technique name="ocra" />
+    <assumption name="true" />
+    <guarantee name="always ( {res} implies in the future {return} )" />
+	</contract>
+	
+    <contract name="res_data_fw" >
+    <technique name="ocra" />
+	<assumption name="true" />
+	<guarantee name="always (
+		     ( {return} implies {last_data(return) = last_data(res)} ) 
+    		     and	
+		     ( {return} implies (Y ((not {return}) since {res}) ))
+		  )" /> 
+	</contract>	            
+    </annotations>
+
+		
+  </subjectType>
+	
+  <subjectImpl name="Dsubject.impl">
+		<subcomponents>
+		<dataSubcomponent name="r"/>
+		<dataSubcomponent name="i"/>		
+		</subcomponents>
+		
+    <modes>
+      <mode name="High" state="INITIAL"/>
+      <mode name="FW_input_H" state="NORMAL"/>
+      <mode name="FW_res_H" state="NORMAL"/>
+      <mode name="Low" state="NORMAL"/>
+      <mode name="FW_input_L" state="NORMAL"/>
+      <mode name="FW_res_L" state="NORMAL"/>
+
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.1/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.1/@modes/@mode.0"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@eventPort.0"/>
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.1/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.1/@modes/@mode.3"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.1/@features/@eventPort.1"/>
+    </modes>
+		
+	</subjectImpl>
+	
+	<subjectType name="Lsubject">
+		<features>
+		<dataPort name="cmd" direction="in"/>
+		<dataPort name="resL" direction="out"/>
+		<dataPort name="outL" direction="out"/>
+		</features>
+
+    <annotations>
+    <contract name="fw" >
+    <technique name="ocra" />
+    <assumption name="true" />
+    <guarantee name="any" value="always ( {cmd} implies in the future {res})" />
+	</contract>
+	
+    <contract name="data_fw" >
+    <technique name="ocra" />
+    <assumption name="true" />
+    <guarantee name="always (
+    	               ( {res} implies {last_data(res) = computation(last_data(cmd))} )
+    		       and
+    		       ( {res} implies (Y ((not {res}) since {cmd})) ) 
+    		       )" />
+	</contract>
+    <contract name="send_data_out" >
+    <technique name="ocra" />
+    <assumption value="true" />
+   	<guarantee name="any" value="({outL less high_bound}) 
+    	             and 
+    		     always ( change({outL}) implies ({cmd} and next({outL}) = {last_data(cmd)}))" />
+    </contract>
+    </annotations>
+
+	</subjectType>
+	
+	<subjectImpl name="Lsubject.impl">
+		<subcomponents>
+		<dataSubcomponent name="r"/>
+		<dataSubcomponent name="i" />
+		</subcomponents>
+		
+    <modes>
+      <mode name="Waiting" state="INITIAL"/>
+      <mode name="Computing" state="NORMAL" />
+
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.2/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.2/@modes/@mode.1"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.2/@features/@dataPort.0" />
+    </modes>
+		
+	</subjectImpl>
+	
+	<subjectType name="Hsubject">
+		<features>
+		<dataPort name="resL" direction="in"/>
+		<dataPort name="res" direction="out"/>
+		<dataPort name="cmd" direction="in"/>
+		</features>
+
+    <annotations>
+    <contract name="fw" >
+    <technique name="ocra" />
+    <assumption name="true" />
+    <guarantee name="always ( {cmd} implies (in the future {res}))" />
+    </contract>
+
+	<contract name="data" >
+	<technique name="ocra" />
+	<assumption name="true" />
+   	<guarantee name="always (
+    	               ( (((not {resL}) since {cmd}) and {res}) implies {last_data(res) = computation(last_data(cmd))} )
+    		       and
+    		       ( (((not {cmd}) since {resL}) and {res}) implies {last_data(res) = last_data(resL)} )
+    		       and
+    		       ( {res} implies (Y ((not {res}) since ( {cmd or resL} ))) ) 
+    		       )" />
+    </contract>
+	<contract name="fw_resL" >
+	<technique name="ocra" />
+    <assumption name="true" />
+    <guarantee name="always ( {resL} implies (in the future {res}))" />
+    </contract>
+    </annotations>
+        		     		
+	</subjectType>
+	
+	<subjectImpl name="Hsubject.impl">
+		<subcomponents>
+		<dataSubcomponent name="r" />
+		<dataSubcomponent name="i" />
+		</subcomponents>
+		
+    <modes>
+      <mode name="Waiting" state="INITIAL"/>
+      <mode name="Computing" state="NORMAL" />
+
+      <modeTransition srcMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.3/@modes/@mode.0"
+          dstMode="//@aadlPackage.0/@aadlPublic/@subjectImpl.3/@modes/@mode.1"
+          triggerEventPort="//@aadlPackage.0/@aadlPublic/@subjectType.3/@features/@dataPort.0" />
+    </modes>
+		
+	</subjectImpl>
+	
+
+    </aadlPublic>
+  </aadlPackage>	
+</core:AadlSpec>

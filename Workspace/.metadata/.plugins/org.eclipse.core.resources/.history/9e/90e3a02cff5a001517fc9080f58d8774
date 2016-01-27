@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<evidence:ArtefactModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:evidence="http://evidence/1.0">
+  <artefact>
+    <artefact name="MILS-AADL model" versionID="1" date="2015-07-31T01:00:00.000+0100"/>
+    <artefact name="OCRA contract specification" description="" versionID="2" date="2015-09-09T00:00:00.000+0100">
+      <evaluation name="OCRA spec consistency check" criterion="OCRA specification is consistent" evaluationResult="Consistency check ref ?"/>
+    </artefact>
+  </artefact>
+</evidence:ArtefactModel>

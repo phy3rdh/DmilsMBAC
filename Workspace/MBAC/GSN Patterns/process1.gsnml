@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="process1" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: activityTrust" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Strat: activityTrust" xsi:type="gsnmetamodel:GSN_Strategy">
+      <contents literal="Argument over performance of" xsi:type="gsnmetamodel:Literal"/>
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" source="Goal: activityTrust" target="Strat: activityTrust" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: activityParts" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="participants are sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3" source="Strat: activityTrust" target="Goal: activityParts" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: tool" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="tool" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5" multiplicity="tool" source="Goal: activityParts" target="Goal: tool" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: activityReqs" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="required and produced artefacts are sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.7" source="Strat: activityTrust" target="Goal: activityReqs" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: artTrust" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="artefact" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.9" multiplicity="artefact" source="Goal: activityReqs" target="Goal: artTrust" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: activityTech" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="techniques used are sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.11" source="Strat: activityTrust" target="Goal: activityTech" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: techniqueTrust" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="technique" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13" multiplicity="technique" source="Goal: activityTech" target="Goal: techniqueTrust" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: subActivities" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="activity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="sub-activities are sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.15" source="Strat: activityTrust" target="Goal: subActivities" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: subActivit" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="subActivity" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.15" hasTarget="//@contains.0/@ArgumentElements.17" multiplicity="subActivity" source="Goal: subActivities" target="Goal: subActivit" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: person" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="person" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.19" multiplicity="person" source="Goal: activityParts" target="Goal: person" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: organisation" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="organisation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.21" multiplicity="organisation" source="Goal: activityParts" target="Goal: organisation" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

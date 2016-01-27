@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gsnmetamodel:Case xmlns:gsnmetamodel="http://gsnmetamodel/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <contains id="processOrg" xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements id="Goal: organisation" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="organisation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="is sufficiently trustworthy" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements id="Goal: indepOrg" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="organisation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="has necessary independence from other organisations" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: indepParts" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents literal="participants within organisation are sufficiently independent" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Goal: orgAccredit" tobeInstantiated="true" xsi:type="gsnmetamodel:GSN_Goal">
+      <contents role="organisation" xsi:type="gsnmetamodel:Role"/>
+      <contents literal="has required accreditation" xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.5" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+    <ArgumentElements id="Sol: accredit" xsi:type="gsnmetamodel:GSN_Solution">
+      <contents role="accreditation" xsi:type="gsnmetamodel:Role"/>
+    </ArgumentElements>
+    <ArgumentElements hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7" xsi:type="gsnmetamodel:GSN_SupportedBy"/>
+  </contains>
+</gsnmetamodel:Case>

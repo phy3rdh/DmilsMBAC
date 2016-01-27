@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gsnmetamodel:Case xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsnmetamodel="http://gsnmetamodel/1.0" id="Assurance Case">
+  <contains xsi:type="gsnmetamodel:GSN_Module">
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: Accident">
+      <contents xsi:type="gsnmetamodel:Role" role="Operator hands crushed by falling press"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has been mitigated"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: Accident">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each identified hazard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="RStrat: Accident" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: Hazard.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Operator hands caught in press when closing"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="most likely cause has been addressed"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: Hazard.0.1" hasSource="//@contains.0/@ArgumentElements.1" hasTarget="//@contains.0/@ArgumentElements.3"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: Hazard.0.1">
+      <contents xsi:type="gsnmetamodel:Role" role=" "/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI NOT INSTANT trueStrat: Hazard.1" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: MLC.0.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="Mechanical fault of clutch"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: MLC.0.1.1" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.7"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: likelihood.0.1.1.1">
+      <contents xsi:type="gsnmetamodel:Role" role="2"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="most likely cause has likelihood of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: likelihood.0.1.1.1" hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.9"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: MLC.0.1.2">
+      <contents xsi:type="gsnmetamodel:Role" role="clutch controller software fault"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: MLC.0.1.2" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.11"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: likelihood.0.1.2.1">
+      <contents xsi:type="gsnmetamodel:Role" role="8"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="most likely cause has likelihood of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: likelihood.0.1.2.1" hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: MLC.0.1.3">
+      <contents xsi:type="gsnmetamodel:Role" role="Electrical fault"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: MLC.0.1.3" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.15"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: likelihood.0.1.3.1">
+      <contents xsi:type="gsnmetamodel:Role" role="4"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="most likely cause has likelihood of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: likelihood.0.1.3.1" hasSource="//@contains.0/@ArgumentElements.15" hasTarget="//@contains.0/@ArgumentElements.17"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: MLC.0.1.4">
+      <contents xsi:type="gsnmetamodel:Role" role="Operator stupidity"/>
+      <contents xsi:type="gsnmetamodel:Literal"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: MLC.0.1.4" hasSource="//@contains.0/@ArgumentElements.5" hasTarget="//@contains.0/@ArgumentElements.19"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: likelihood.0.1.4.1">
+      <contents xsi:type="gsnmetamodel:Role" role="5"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="most likely cause has likelihood of"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" id="MULTI EDGE no count Goal: likelihood.0.1.4.1" hasSource="//@contains.0/@ArgumentElements.19" hasTarget="//@contains.0/@ArgumentElements.21"/>
+  </contains>
+</gsnmetamodel:Case>

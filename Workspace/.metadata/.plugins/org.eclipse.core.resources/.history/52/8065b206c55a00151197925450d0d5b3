@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gsnmetamodel:Case xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gsnmetamodel="http://gsnmetamodel/1.0">
+  <contains xsi:type="gsnmetamodel:GSN_Module" id="processTool">
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: tool" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolAppro" toBeSupported="true" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is appropriate for the activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.1"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolProv" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="has necessary assurance"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.0" hasTarget="//@contains.0/@ArgumentElements.3"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: provenance" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="required integrity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.5"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolQualify" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is qualified to the required standard"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.7"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: integrity" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool integrity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" hasSource="//@contains.0/@ArgumentElements.7" hasTarget="//@contains.0/@ArgumentElements.9"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: objectives" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="tool"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="meets its defined objectives"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.3" hasTarget="//@contains.0/@ArgumentElements.11"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evaluations">
+      <contents xsi:type="gsnmetamodel:Literal" literal="evaluations of tool operation demonstrates the defined tool objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.13"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: evaluations">
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over each evaluation"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.13" hasTarget="//@contains.0/@ArgumentElements.15"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: evalTool" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="evaluation"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="demonstrates correctness of tool"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.15" hasTarget="//@contains.0/@ArgumentElements.17" multiplicity="evaluation"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: toolDev">
+      <contents xsi:type="gsnmetamodel:Literal" literal="The development of the tool ensures the objective is met"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.19"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Strategy" id="Strat: toolDev">
+      <contents xsi:type="gsnmetamodel:Literal" literal="Argument over tool development process"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.19" hasTarget="//@contains.0/@ArgumentElements.21"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: activities">
+      <contents xsi:type="gsnmetamodel:Role" role="activity"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" hasSource="//@contains.0/@ArgumentElements.21" hasTarget="//@contains.0/@ArgumentElements.23"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_Goal" id="Goal: activityTrust" tobeInstantiated="true">
+      <contents xsi:type="gsnmetamodel:Role" role="activity"/>
+      <contents xsi:type="gsnmetamodel:Literal" literal="is sufficiently trustworthy"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_SupportedBy" hasSource="//@contains.0/@ArgumentElements.21" hasTarget="//@contains.0/@ArgumentElements.25" multiplicity="activity"/>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_ContextAsAssertion" id="Con: objective">
+      <contents xsi:type="gsnmetamodel:Role" role="objective"/>
+    </ArgumentElements>
+    <ArgumentElements xsi:type="gsnmetamodel:GSN_InContextOf" hasSource="//@contains.0/@ArgumentElements.11" hasTarget="//@contains.0/@ArgumentElements.27"/>
+  </contains>
+</gsnmetamodel:Case>
